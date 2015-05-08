@@ -17,16 +17,17 @@ class ElanceScrapyFetcher: FetchProtocal {
             if(error == nil){
                 let x = 0
             }else{
-                let html:String = object as! String
+                let html:NSData = object as! NSData
                 self.parseHtml(html)
             }
         }
     }
     
     
-    func parseHtml(html:String){
-        println("parse html is \(html)")
-        
+    func parseHtml(html:NSData){
+//        println("parse html is \(html)")
+
+        GDataHtmlHelper().startHTMLParsing(html)
     }
     
 }

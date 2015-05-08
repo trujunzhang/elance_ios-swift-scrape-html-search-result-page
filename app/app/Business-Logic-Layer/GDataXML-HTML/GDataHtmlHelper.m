@@ -13,10 +13,11 @@
 @implementation GDataHtmlHelper
 
 
-- (void)startHTMLParsing:( NSData * )data {
-    GDataXMLDocument *doc = [[GDataXMLDocument alloc]initWithHTMLData:data error:NULL];
+- (void)startHTMLParsing:(NSData *)data {
+    GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithHTMLData:data error:NULL];
     if (doc) {
-        [[doc rootElement] XMLString];
+        NSString *xmlString = [[doc rootElement] XMLString];
+        NSLog(@"xmlString = %@", xmlString);
     }
 }
 

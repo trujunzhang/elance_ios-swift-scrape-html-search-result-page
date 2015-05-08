@@ -5,7 +5,7 @@
 
 // Project Object-c files
 #import "DownloadHtmlHelper.h"
-
+#import "GDataHtmlHelper.h"
 
 #import <AFNetworking/AFNetworking.h>
 

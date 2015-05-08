@@ -36,7 +36,7 @@ class ElanceScrapyFetcherTests: XCTestCase {
         })
         
         
-        waitForExpectationsWithTimeout(10) { (error) in
+        waitForExpectationsWithTimeout(100) { (error) in
             XCTAssertNil(error, "\(error)")
         }
     }
