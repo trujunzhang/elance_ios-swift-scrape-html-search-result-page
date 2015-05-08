@@ -8,18 +8,24 @@
 
 import UIKit
 
-class SeearchViewController: UITableViewController {
-
+class SeearchViewController: UITableViewController{
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
 
+        ElanceScrapyFetcher().fetchHtml { (object, sucess) -> Void in
+            
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    
 }
 

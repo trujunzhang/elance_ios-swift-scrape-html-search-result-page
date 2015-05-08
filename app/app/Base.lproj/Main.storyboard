@@ -54,5 +54,57 @@
             </objects>
             <point key="canvasLocation" x="298" y="244"/>
         </scene>
+        <!--Webview Source View Controller-->
+        <scene sceneID="kfz-Jy-OV8">
+            <objects>
+                <viewController id="s6h-cq-u7J" customClass="WebviewSourceViewController" customModule="app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MlB-qi-i7y"/>
+                        <viewControllerLayoutGuide type="bottom" id="tYg-Zw-NH6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SMc-t1-bUV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXg-2s-grA">
+                                <rect key="frame" x="11" y="0.0" width="578" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tYg-Zw-NH6" firstAttribute="top" secondItem="LXg-2s-grA" secondAttribute="bottom" id="57H-AW-jIR"/>
+                            <constraint firstAttribute="trailing" secondItem="LXg-2s-grA" secondAttribute="trailing" constant="11" id="Bn0-Ne-oo2"/>
+                            <constraint firstItem="LXg-2s-grA" firstAttribute="top" secondItem="SMc-t1-bUV" secondAttribute="top" id="Ldu-qx-Kk4"/>
+                            <constraint firstItem="LXg-2s-grA" firstAttribute="leading" secondItem="SMc-t1-bUV" secondAttribute="leading" constant="11" id="sns-ez-1zA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z16-Jc-Eut"/>
+                    <connections>
+                        <outlet property="webView" destination="LXg-2s-grA" id="bDe-ws-XqL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bu-8M-MCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1279" y="1178"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oaV-iF-nQ7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hLI-ws-m3T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mDh-CX-3Dm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="s6h-cq-u7J" kind="relationship" relationship="rootViewController" id="fPw-lx-Ya8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rLP-fa-QeM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="1178"/>
+        </scene>
     </scenes>
 </document>

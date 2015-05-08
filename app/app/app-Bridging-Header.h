@@ -7,6 +7,8 @@
 #import "DownloadHtmlHelper.h"
 
 
+#import <ObjectiveGumbo.h>
+
 #import <AFNetworking/AFNetworking.h>
 
 #import <libxml/HTMLtree.h>

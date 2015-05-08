@@ -9,9 +9,10 @@
 import Foundation
 
 class ElanceScrapyFetcher: FetchProtocal {
+
     
     func fetchHtml(completeHandler: ObjectHandler){
-        let url = "\(elance_host)-scrapy"
+        let url = "\(elance_host)scrapy"
         DownloadHtmlHelper.downlaodHtml(url) { (object, error) -> Void in
             if(error == nil){
                 let html:String = object as! String
@@ -23,7 +24,11 @@ class ElanceScrapyFetcher: FetchProtocal {
     }
     
     
+    
+    
     func parseHtml(html:String){
+//        println("html is \(html)")
+        
         var err : NSError?
         var parser     = HTMLParser(html: html, error: &err)
         if err != nil {
@@ -31,20 +36,20 @@ class ElanceScrapyFetcher: FetchProtocal {
             exit(1)
         }
         
-        var bodyNode   = parser.body
+        var bodyNode   = parser.body?.findNodeById("jobSearchResults")
         
-        if let inputNodes = bodyNode?.findChildTags("b") {
+        if let inputNodes = bodyNode?.findChildTags("div") {
             for node in inputNodes {
                 println(node.contents)
             }
         }
         
-        if let inputNodes = bodyNode?.findChildTags("a") {
-            for node in inputNodes {
-                println(node.contents)
-                println(node.getAttributeNamed("href"))
-            }
-        }
+        //        if let inputNodes = bodyNode?.findChildTags("a") {
+        //            for node in inputNodes {
+        //                println(node.contents)
+        //                println(node.getAttributeNamed("href"))
+        //            }
+        //        }
     }
     
 }
