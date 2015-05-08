@@ -15,7 +15,7 @@ class ElanceScrapyFetcher: FetchProtocal {
 //        DownloadHtmlHelper.downlaodHtml(queryUrl)
         DownloadHtmlHelper.downlaodHtml(url) { (object, error) -> Void in
             if(error == nil){
-                
+                let x = 0
             }else{
                 let html:String = object as! String
                 self.parseHtml(html)
@@ -25,6 +25,7 @@ class ElanceScrapyFetcher: FetchProtocal {
     
     
     func parseHtml(html:String){
+        println("parse html is \(html)")
         
     }
     

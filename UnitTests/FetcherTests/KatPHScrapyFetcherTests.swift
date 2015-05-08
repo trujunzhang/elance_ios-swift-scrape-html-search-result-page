@@ -21,7 +21,7 @@ class KatPHScrapyFetcherTests: XCTestCase {
         super.tearDown()
     }
 
-    func testExample() {
+    func _testExample() {
 
     }
 

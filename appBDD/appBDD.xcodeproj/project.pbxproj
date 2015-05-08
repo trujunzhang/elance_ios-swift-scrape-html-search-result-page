@@ -32,6 +32,7 @@
 		5EC2A5B31AFCC35B0003B22D /* KatPHScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5B01AFCC35B0003B22D /* KatPHScrapyFetcher.swift */; };
 		5EC2A5B41AFCC36B0003B22D /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5AE1AFCC35B0003B22D /* ElanceScrapyFetcher.swift */; };
 		5EC2A5B51AFCC36F0003B22D /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5AF1AFCC35B0003B22D /* GoogleScrapyFetcher.swift */; };
+		5EEC42501AFCC7FC00C2E44E /* ElanceScrapyFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EEC424F1AFCC7FC00C2E44E /* ElanceScrapyFetcherTests.m */; };
 		9E05D26F59C35B79B325D9FE /* libPods-appBDD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E892CB90B44DD2C98B1901AF /* libPods-appBDD.a */; };
 		A424F441FE544CCBD0329457 /* libPods-appBDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3613058708E4AD0A8270D99 /* libPods-appBDDTests.a */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		5EC2A5AE1AFCC35B0003B22D /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElanceScrapyFetcher.swift; path = Tasks/ElanceScrapyFetcher.swift; sourceTree = "<group>"; };
 		5EC2A5AF1AFCC35B0003B22D /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleScrapyFetcher.swift; path = Tasks/GoogleScrapyFetcher.swift; sourceTree = "<group>"; };
 		5EC2A5B01AFCC35B0003B22D /* KatPHScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KatPHScrapyFetcher.swift; path = Tasks/KatPHScrapyFetcher.swift; sourceTree = "<group>"; };
+		5EEC424F1AFCC7FC00C2E44E /* ElanceScrapyFetcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElanceScrapyFetcherTests.m; sourceTree = "<group>"; };
 		7AFA2CFAE84160848B655C0F /* Pods-appBDDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appBDDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-appBDDTests/Pods-appBDDTests.release.xcconfig"; sourceTree = "<group>"; };
 		94A437AAD09B01056BB61053 /* Pods-appBDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appBDD.release.xcconfig"; path = "Pods/Target Support Files/Pods-appBDD/Pods-appBDD.release.xcconfig"; sourceTree = "<group>"; };
 		B3613058708E4AD0A8270D99 /* libPods-appBDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appBDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */,
+				5EEC424F1AFCC7FC00C2E44E /* ElanceScrapyFetcherTests.m */,
 			);
 			name = FetcherTests;
 			path = ../../UnitTests/FetcherTests;
@@ -491,6 +494,7 @@
 				5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */,
 				5EC2A5A91AFCC23F0003B22D /* FetcherConstant.swift in Sources */,
 				5EC2A5B51AFCC36F0003B22D /* GoogleScrapyFetcher.swift in Sources */,
+				5EEC42501AFCC7FC00C2E44E /* ElanceScrapyFetcherTests.m in Sources */,
 				5EC2A5AC1AFCC2CF0003B22D /* FetchProtocal.swift in Sources */,
 				5EC2A5B41AFCC36B0003B22D /* ElanceScrapyFetcher.swift in Sources */,
 				5EC2A5A61AFCC0400003B22D /* DownloadHtmlHelper.m in Sources */,
