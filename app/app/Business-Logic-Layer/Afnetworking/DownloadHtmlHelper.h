@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^HtmlResponseBlock)(NSObject *respObject, NSError *error);
+
+
 @interface DownloadHtmlHelper : NSObject
 
-+(void)downlaodHtml:(NSString*) htmlUrl;
++(void)downlaodHtml:(NSString*) htmlUrl completeHandler:(HtmlResponseBlock)block;
 
 @end
