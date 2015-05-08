@@ -18,6 +18,7 @@
 		5E3410581AFC980D00F19931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3410561AFC980D00F19931 /* Main.storyboard */; };
 		5E34105A1AFC980D00F19931 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3410591AFC980D00F19931 /* Images.xcassets */; };
 		5E34105D1AFC980D00F19931 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E34105B1AFC980D00F19931 /* LaunchScreen.xib */; };
+		5E86DE491AFCA8E10051490B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E86DE481AFCA8E10051490B /* Alamofire.framework */; };
 		B223B903054BE7BA53859C50 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E847E66BE5E0D02EC5A303 /* libPods-app.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		5E34105C1AFC980D00F19931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5E3410671AFC980D00F19931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E3410681AFC980D00F19931 /* appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appTests.swift; sourceTree = "<group>"; };
+		5E86DE481AFCA8E10051490B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		63E847E66BE5E0D02EC5A303 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA75DB8FA4D52F2FAF88ED /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E86DE491AFCA8E10051490B /* Alamofire.framework in Frameworks */,
 				B223B903054BE7BA53859C50 /* libPods-app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,6 +60,7 @@
 		5D6CB5E0308FCC3E15A5CCC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E86DE481AFCA8E10051490B /* Alamofire.framework */,
 				63E847E66BE5E0D02EC5A303 /* libPods-app.a */,
 			);
 			name = Frameworks;
@@ -178,6 +182,7 @@
 				5E34104A1AFC980C00F19931 /* Frameworks */,
 				5E34104B1AFC980C00F19931 /* Resources */,
 				58B609A2F2194D85FD536A91 /* Copy Pods Resources */,
+				5EB12A7D1AFCA89500772005 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -249,6 +254,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-app/Pods-app-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5EB12A7D1AFCA89500772005 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		6113B69D38F31D2A073C32FC /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -394,6 +413,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -406,6 +429,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

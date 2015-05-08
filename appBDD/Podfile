@@ -10,7 +10,7 @@ def import_pods
 
   pod "AFNetworking", :path => "../dependencies/AFNetworking"
 
-
+  pod "GDataXML-HTML", :path => "../dependencies/GDataXML-HTML"
 end
 
 target 'appBDD', :exclusive => true do

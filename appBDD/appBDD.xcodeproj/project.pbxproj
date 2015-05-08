@@ -14,6 +14,17 @@
 		5E6AF63D1AFC985C00FDE994 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF63B1AFC985C00FDE994 /* LaunchScreen.xib */; };
 		5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF6481AFC985C00FDE994 /* appBDDTests.swift */; };
 		5E9074761AFCA13600C262B2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9074751AFCA13600C262B2 /* Nimble.framework */; };
+		5EBB084F1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */; };
+		5EC087B51AFCA90800B41FE9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC087B41AFCA90800B41FE9 /* Alamofire.framework */; };
+		5EC087C01AFCA92000B41FE9 /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087B81AFCA92000B41FE9 /* ElanceScrapyFetcher.swift */; };
+		5EC087C11AFCA92000B41FE9 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087B91AFCA92000B41FE9 /* GoogleScrapyFetcher.swift */; };
+		5EC087C21AFCA92000B41FE9 /* KatPHScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BA1AFCA92000B41FE9 /* KatPHScrapyFetcher.swift */; };
+		5EC087C31AFCA92000B41FE9 /* ElanceHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BC1AFCA92000B41FE9 /* ElanceHtmlParser.swift */; };
+		5EC087C41AFCA92000B41FE9 /* KatPHHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BD1AFCA92000B41FE9 /* KatPHHtmlParser.swift */; };
+		5EC087C51AFCA92000B41FE9 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */; };
+		5EC087C61AFCA92900B41FE9 /* KatPHScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BA1AFCA92000B41FE9 /* KatPHScrapyFetcher.swift */; };
+		5EC087C71AFCA92B00B41FE9 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087B91AFCA92000B41FE9 /* GoogleScrapyFetcher.swift */; };
+		5EC087C81AFCA92E00B41FE9 /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087B81AFCA92000B41FE9 /* ElanceScrapyFetcher.swift */; };
 		9E05D26F59C35B79B325D9FE /* libPods-appBDD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E892CB90B44DD2C98B1901AF /* libPods-appBDD.a */; };
 		A424F441FE544CCBD0329457 /* libPods-appBDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3613058708E4AD0A8270D99 /* libPods-appBDDTests.a */; };
 /* End PBXBuildFile section */
@@ -40,6 +51,14 @@
 		5E6AF6471AFC985C00FDE994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E6AF6481AFC985C00FDE994 /* appBDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appBDDTests.swift; sourceTree = "<group>"; };
 		5E9074751AFCA13600C262B2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHScrapyFetcherTests.swift; sourceTree = "<group>"; };
+		5EC087B41AFCA90800B41FE9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		5EC087B81AFCA92000B41FE9 /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElanceScrapyFetcher.swift; sourceTree = "<group>"; };
+		5EC087B91AFCA92000B41FE9 /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleScrapyFetcher.swift; sourceTree = "<group>"; };
+		5EC087BA1AFCA92000B41FE9 /* KatPHScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHScrapyFetcher.swift; sourceTree = "<group>"; };
+		5EC087BC1AFCA92000B41FE9 /* ElanceHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElanceHtmlParser.swift; sourceTree = "<group>"; };
+		5EC087BD1AFCA92000B41FE9 /* KatPHHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHHtmlParser.swift; sourceTree = "<group>"; };
+		5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlResultData.swift; sourceTree = "<group>"; };
 		7AFA2CFAE84160848B655C0F /* Pods-appBDDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appBDDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-appBDDTests/Pods-appBDDTests.release.xcconfig"; sourceTree = "<group>"; };
 		94A437AAD09B01056BB61053 /* Pods-appBDD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appBDD.release.xcconfig"; path = "Pods/Target Support Files/Pods-appBDD/Pods-appBDD.release.xcconfig"; sourceTree = "<group>"; };
 		B3613058708E4AD0A8270D99 /* libPods-appBDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appBDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A424F441FE544CCBD0329457 /* libPods-appBDDTests.a in Frameworks */,
+				5EC087B51AFCA90800B41FE9 /* Alamofire.framework in Frameworks */,
 				5E9074761AFCA13600C262B2 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,6 +92,7 @@
 		1DCAEDB878E29D02405D7304 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EC087B41AFCA90800B41FE9 /* Alamofire.framework */,
 				5E9074751AFCA13600C262B2 /* Nimble.framework */,
 				E892CB90B44DD2C98B1901AF /* libPods-appBDD.a */,
 				B3613058708E4AD0A8270D99 /* libPods-appBDDTests.a */,
@@ -113,6 +134,7 @@
 		5E6AF62F1AFC985C00FDE994 /* appBDD */ = {
 			isa = PBXGroup;
 			children = (
+				5EC087B61AFCA92000B41FE9 /* Business-Logic-Layer */,
 				5E6AF6321AFC985C00FDE994 /* AppDelegate.swift */,
 				5E6AF6341AFC985C00FDE994 /* ViewController.swift */,
 				5E6AF6361AFC985C00FDE994 /* Main.storyboard */,
@@ -134,6 +156,8 @@
 		5E6AF6451AFC985C00FDE994 /* appBDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				5EBB084C1AFCA96500EDD026 /* FetcherTests */,
+				5EBB084D1AFCA96500EDD026 /* HtmlParserTests */,
 				5E6AF6481AFC985C00FDE994 /* appBDDTests.swift */,
 				5E6AF6461AFC985C00FDE994 /* Supporting Files */,
 			);
@@ -146,6 +170,61 @@
 				5E6AF6471AFC985C00FDE994 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EBB084C1AFCA96500EDD026 /* FetcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */,
+			);
+			name = FetcherTests;
+			path = ../../UnitTests/FetcherTests;
+			sourceTree = "<group>";
+		};
+		5EBB084D1AFCA96500EDD026 /* HtmlParserTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = HtmlParserTests;
+			path = ../../UnitTests/HtmlParserTests;
+			sourceTree = "<group>";
+		};
+		5EC087B61AFCA92000B41FE9 /* Business-Logic-Layer */ = {
+			isa = PBXGroup;
+			children = (
+				5EC087B71AFCA92000B41FE9 /* Fetcher */,
+				5EC087BB1AFCA92000B41FE9 /* HtmlParser */,
+				5EC087BE1AFCA92000B41FE9 /* Models */,
+			);
+			name = "Business-Logic-Layer";
+			path = "../../app/app/Business-Logic-Layer";
+			sourceTree = "<group>";
+		};
+		5EC087B71AFCA92000B41FE9 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				5EC087B81AFCA92000B41FE9 /* ElanceScrapyFetcher.swift */,
+				5EC087B91AFCA92000B41FE9 /* GoogleScrapyFetcher.swift */,
+				5EC087BA1AFCA92000B41FE9 /* KatPHScrapyFetcher.swift */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		5EC087BB1AFCA92000B41FE9 /* HtmlParser */ = {
+			isa = PBXGroup;
+			children = (
+				5EC087BC1AFCA92000B41FE9 /* ElanceHtmlParser.swift */,
+				5EC087BD1AFCA92000B41FE9 /* KatPHHtmlParser.swift */,
+			);
+			path = HtmlParser;
+			sourceTree = "<group>";
+		};
+		5EC087BE1AFCA92000B41FE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +335,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 			);
@@ -330,7 +410,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC087C11AFCA92000B41FE9 /* GoogleScrapyFetcher.swift in Sources */,
+				5EC087C31AFCA92000B41FE9 /* ElanceHtmlParser.swift in Sources */,
+				5EC087C01AFCA92000B41FE9 /* ElanceScrapyFetcher.swift in Sources */,
 				5E6AF6351AFC985C00FDE994 /* ViewController.swift in Sources */,
+				5EC087C41AFCA92000B41FE9 /* KatPHHtmlParser.swift in Sources */,
+				5EC087C51AFCA92000B41FE9 /* HtmlResultData.swift in Sources */,
+				5EC087C21AFCA92000B41FE9 /* KatPHScrapyFetcher.swift in Sources */,
 				5E6AF6331AFC985C00FDE994 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,7 +425,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC087C61AFCA92900B41FE9 /* KatPHScrapyFetcher.swift in Sources */,
+				5EC087C71AFCA92B00B41FE9 /* GoogleScrapyFetcher.swift in Sources */,
 				5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */,
+				5EC087C81AFCA92E00B41FE9 /* ElanceScrapyFetcher.swift in Sources */,
+				5EBB084F1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
