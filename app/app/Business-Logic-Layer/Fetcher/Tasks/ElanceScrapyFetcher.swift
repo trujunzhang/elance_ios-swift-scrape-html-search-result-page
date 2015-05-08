@@ -11,14 +11,15 @@ import Foundation
 class ElanceScrapyFetcher: FetchProtocal {
     
     func fetchHtml(completeHandler: ObjectHandler){
+        let queryUrl = "\(elance_host)-scrapy"
+        DownloadHtmlHelper.downlaodHtml(queryUrl)
         
+        parseHtml
     }
     
     
-//    func fetchHtml(completeHandler: ObjectHandler)
-////        DownloadHtmlHelper.downlaodHtml("http://www.baidu.com")
-//        let queryUrl = "\(elance_host)-scrapy"
-//         DownloadHtmlHelper.downlaodHtml(queryUrl)
-//    }
+    func parseHtml(html:String){
+        
+    }
     
 }
