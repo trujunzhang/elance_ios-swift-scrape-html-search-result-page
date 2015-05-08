@@ -8,66 +8,74 @@
 
 import Foundation
 
-class ElanceScrapyFetcher: FetchProtocal {
-
-
-    func fetchHtml(completeHandler: ObjectHandler) {
-        let url = "https://www.elance.com/r/jobs/q-scrapy/"
-
-        DownloadHtmlHelper.downlaodHtml(url) {
-            (object, error) -> Void in
-            if (error == nil) {
-                let html: String = object as! String
-                self.parseHtml(html)
-            } else {
-                let x = 0
-            }
-        }
+class ElanceScrapyFetcher: FetcherBaseParser {
+    override func getHost() -> String{
+        return "https://www.elance.com/r/jobs/q-scrapy/"
     }
-
-    func parseHtml(html: String) {
-        let data:OGNode = ObjectiveGumbo.parseDocumentWithString(html)
-        let xpath = "//div[@id=\"jobSearchResults\"]//div[@data-pos]"
+    
+    override func fetchHtml(completeHandler: ObjectHandler) {
+        super.fetchHtml(completeHandler)
         
-        let divArray:NSArray = data.select(xpath)
+//        let url = "https://www.elance.com/r/jobs/q-scrapy/"
         
-        println("length is \(divArray.count)")
-        
-//        let divArray:NSArray = data.elementsWithID("jobSearchResults")
-//        
-//        if(divArray.count == 1){
-//            let searchResultsElement:OGElement = divArray[0] as! OGElement
-////             println("result is \( searchResultsElement.html())")
-//            
-//            self.parseResultsElement(searchResultsElement)
+//        DownloadHtmlHelper.downlaodHtml(getHost()) {
+//            (object, error) -> Void in
+//            if (error == nil) {
+//                let html: String = object as! String
+//                self.parseHtml(html)
+//            } else {
+//                let x = 0
+//            }
 //        }
     }
     
-    func parseResultsElement(searchResultsElement:OGElement){
-        let divArray:NSArray = searchResultsElement.elementsWithClass("jobCard")
+    override func parseHtml(html: String) {
         
-        println("divArray is \(divArray.count)")
-        for resultElement in divArray{
-            self.parseResultelement(resultElement as! OGElement)
+        
+        let xpath = "//div[@id=\"jobSearchResults\"]//div[@data-pos]"
+        
+        let doc : GDataXMLDocument = GDataXMLDocument(HTMLString: html, error: nil)
+        
+        let searchResults:NSArray = doc.nodesForXPath(xpath, error: nil)
+        
+        //        println("length is \(searchResults.count)")
+        
+        for resultElement in searchResults{
+            self.parseResultelement(resultElement as! GDataXMLElement)
         }
     }
     
-    func parseResultelement(searchResultsElement:OGElement){
-        var divArray:NSArray = searchResultsElement.elementsWithClass("title")
-        
+    
+    func parseResultelement(element:GDataXMLElement){
         var title = ""
         var link = ""
         var content = ""
+        let title_xpath = "div[1]/a[1]/text()"
         
-        if(divArray.count == 1){
-            let element:OGElement = divArray[0] as! OGElement
-//            title = element.attributes[""] as String
-            println("\(element.attributes)")
+        let titleResults:NSArray = element.nodesForXPath(title_xpath, error: nil)
+        if(titleResults.count == 1){
+            let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
+            title =  titleNode.XMLString()
+            println("\(titleNode.XMLString())")
+        }
+        
+        
+    }
+    
+    func parseResultelementxxx(element:GDataXMLElement){
+        var title = ""
+        var link = ""
+        var content = ""
+        let title_xpath = "div[1]/a[1]/text()"
+        
+        let titleResults:NSArray = element.nodesForXPath(title_xpath, error: nil)
+        if(titleResults.count == 1){
+            let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
+            title =  titleNode.XMLString()
+            println("\(titleNode.XMLString())")
         }
 
         
-//        println("divArray is \(divArray.count)")
-        //        jobCard
     }
-
+    
 }

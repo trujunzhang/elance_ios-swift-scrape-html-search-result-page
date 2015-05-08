@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class KatPHScrapyFetcher: FetchProtocal {
+class KatPHScrapyFetcher: NSObject {
     
     
     

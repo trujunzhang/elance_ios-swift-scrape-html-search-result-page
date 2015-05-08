@@ -12,6 +12,8 @@ typealias ObjectHandler = (AnyObject!, Bool!) -> Void
 
 protocol FetchProtocal{
     
+    func getHost() -> String
+    
     func fetchHtml(completeHandler: ObjectHandler)
     
     func parseHtml(html:String)
