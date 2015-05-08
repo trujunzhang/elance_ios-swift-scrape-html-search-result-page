@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E33849E1AFC9DE50050F867 /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33849D1AFC9DE50050F867 /* ElanceScrapyFetcher.swift */; };
+		5E3384A11AFC9E090050F867 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3384A01AFC9E090050F867 /* GoogleScrapyFetcher.swift */; };
+		5E3384A31AFC9E180050F867 /* KatPHScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3384A21AFC9E180050F867 /* KatPHScrapyFetcher.swift */; };
 		5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3410521AFC980D00F19931 /* AppDelegate.swift */; };
 		5E3410551AFC980D00F19931 /* SeearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3410541AFC980D00F19931 /* SeearchViewController.swift */; };
 		5E3410581AFC980D00F19931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3410561AFC980D00F19931 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E33849D1AFC9DE50050F867 /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElanceScrapyFetcher.swift; path = "Business-Logic-Layer/Fetcher/ElanceScrapyFetcher.swift"; sourceTree = "<group>"; };
+		5E3384A01AFC9E090050F867 /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleScrapyFetcher.swift; path = "Business-Logic-Layer/Fetcher/GoogleScrapyFetcher.swift"; sourceTree = "<group>"; };
+		5E3384A21AFC9E180050F867 /* KatPHScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KatPHScrapyFetcher.swift; path = "Business-Logic-Layer/Fetcher/KatPHScrapyFetcher.swift"; sourceTree = "<group>"; };
 		5E34104D1AFC980D00F19931 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3410511AFC980D00F19931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E3410521AFC980D00F19931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E33849C1AFC9C9C0050F867 /* Business-Logic-Layer */ = {
+			isa = PBXGroup;
+			children = (
+				5E33849F1AFC9DF20050F867 /* Fetcher */,
+			);
+			name = "Business-Logic-Layer";
+			sourceTree = "<group>";
+		};
+		5E33849F1AFC9DF20050F867 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				5E3384A21AFC9E180050F867 /* KatPHScrapyFetcher.swift */,
+				5E3384A01AFC9E090050F867 /* GoogleScrapyFetcher.swift */,
+				5E33849D1AFC9DE50050F867 /* ElanceScrapyFetcher.swift */,
+			);
+			name = Fetcher;
+			sourceTree = "<group>";
+		};
 		5E3410441AFC980C00F19931 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +101,7 @@
 		5E34104F1AFC980D00F19931 /* app */ = {
 			isa = PBXGroup;
 			children = (
+				5E33849C1AFC9C9C0050F867 /* Business-Logic-Layer */,
 				5E3410521AFC980D00F19931 /* AppDelegate.swift */,
 				5E3410541AFC980D00F19931 /* SeearchViewController.swift */,
 				5E3410561AFC980D00F19931 /* Main.storyboard */,
@@ -213,7 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3384A11AFC9E090050F867 /* GoogleScrapyFetcher.swift in Sources */,
+				5E33849E1AFC9DE50050F867 /* ElanceScrapyFetcher.swift in Sources */,
 				5E3410551AFC980D00F19931 /* SeearchViewController.swift in Sources */,
+				5E3384A31AFC9E180050F867 /* KatPHScrapyFetcher.swift in Sources */,
 				5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
