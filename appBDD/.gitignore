@@ -87,7 +87,8 @@ Cartfile.resolved
 #/Volumes/Home/Developing/SketchProjects/AsYoutubeiPad-swift-client/app/.gitignore
 #/Volumes/Home/Developing/SketchProjects/AsYoutubeiPad-swift-client/app/Carthage/Checkouts
 
-Carthage/
+Carthage/Checkouts
+Carthage/Build/Mac
 
 Gemfile.lock
 output.txt
