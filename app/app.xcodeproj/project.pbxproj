@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E33849E1AFC9DE50050F867 /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E33849D1AFC9DE50050F867 /* ElanceScrapyFetcher.swift */; };
-		5E3384A11AFC9E090050F867 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3384A01AFC9E090050F867 /* GoogleScrapyFetcher.swift */; };
-		5E3384A31AFC9E180050F867 /* KatPHScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3384A21AFC9E180050F867 /* KatPHScrapyFetcher.swift */; };
-		5E3384A61AFC9EA10050F867 /* KatPHHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3384A51AFC9EA10050F867 /* KatPHHtmlParser.swift */; };
-		5E3384A81AFC9EAE0050F867 /* ElanceHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3384A71AFC9EAE0050F867 /* ElanceHtmlParser.swift */; };
-		5E3384AB1AFC9EFF0050F867 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3384AA1AFC9EFF0050F867 /* HtmlResultData.swift */; };
 		5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3410521AFC980D00F19931 /* AppDelegate.swift */; };
 		5E3410551AFC980D00F19931 /* SeearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3410541AFC980D00F19931 /* SeearchViewController.swift */; };
 		5E3410581AFC980D00F19931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3410561AFC980D00F19931 /* Main.storyboard */; };
 		5E34105A1AFC980D00F19931 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3410591AFC980D00F19931 /* Images.xcassets */; };
 		5E34105D1AFC980D00F19931 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E34105B1AFC980D00F19931 /* LaunchScreen.xib */; };
 		5E86DE491AFCA8E10051490B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E86DE481AFCA8E10051490B /* Alamofire.framework */; };
+		5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */; };
+		5EACB9281AFCC3CF0031F249 /* FetcherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91A1AFCC3CF0031F249 /* FetcherHelper.swift */; };
+		5EACB9291AFCC3CF0031F249 /* FetcherConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91C1AFCC3CF0031F249 /* FetcherConstant.swift */; };
+		5EACB92A1AFCC3CF0031F249 /* FetchProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */; };
+		5EACB92B1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91F1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift */; };
+		5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */; };
+		5EACB92D1AFCC3CF0031F249 /* KatPHScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9211AFCC3CF0031F249 /* KatPHScrapyFetcher.swift */; };
+		5EACB92E1AFCC3CF0031F249 /* ElanceHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9231AFCC3CF0031F249 /* ElanceHtmlParser.swift */; };
+		5EACB92F1AFCC3CF0031F249 /* KatPHHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9241AFCC3CF0031F249 /* KatPHHtmlParser.swift */; };
+		5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */; };
 		B223B903054BE7BA53859C50 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E847E66BE5E0D02EC5A303 /* libPods-app.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48910AD94547067D0DAB0ABB /* Pods-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.debug.xcconfig"; sourceTree = "<group>"; };
-		5E33849D1AFC9DE50050F867 /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElanceScrapyFetcher.swift; path = "Business-Logic-Layer/Fetcher/ElanceScrapyFetcher.swift"; sourceTree = "<group>"; };
-		5E3384A01AFC9E090050F867 /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleScrapyFetcher.swift; path = "Business-Logic-Layer/Fetcher/GoogleScrapyFetcher.swift"; sourceTree = "<group>"; };
-		5E3384A21AFC9E180050F867 /* KatPHScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KatPHScrapyFetcher.swift; path = "Business-Logic-Layer/Fetcher/KatPHScrapyFetcher.swift"; sourceTree = "<group>"; };
-		5E3384A51AFC9EA10050F867 /* KatPHHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KatPHHtmlParser.swift; path = "Business-Logic-Layer/HtmlParser/KatPHHtmlParser.swift"; sourceTree = "<group>"; };
-		5E3384A71AFC9EAE0050F867 /* ElanceHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElanceHtmlParser.swift; path = "Business-Logic-Layer/HtmlParser/ElanceHtmlParser.swift"; sourceTree = "<group>"; };
-		5E3384AA1AFC9EFF0050F867 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HtmlResultData.swift; path = "Business-Logic-Layer/Models/HtmlResultData.swift"; sourceTree = "<group>"; };
 		5E34104D1AFC980D00F19931 /* app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3410511AFC980D00F19931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E3410521AFC980D00F19931 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +38,18 @@
 		5E3410671AFC980D00F19931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E3410681AFC980D00F19931 /* appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appTests.swift; sourceTree = "<group>"; };
 		5E86DE481AFCA8E10051490B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		5EACB9171AFCC3CF0031F249 /* DownloadHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadHtmlHelper.h; sourceTree = "<group>"; };
+		5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadHtmlHelper.m; sourceTree = "<group>"; };
+		5EACB91A1AFCC3CF0031F249 /* FetcherHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherHelper.swift; sourceTree = "<group>"; };
+		5EACB91C1AFCC3CF0031F249 /* FetcherConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherConstant.swift; sourceTree = "<group>"; };
+		5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchProtocal.swift; sourceTree = "<group>"; };
+		5EACB91F1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElanceScrapyFetcher.swift; sourceTree = "<group>"; };
+		5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleScrapyFetcher.swift; sourceTree = "<group>"; };
+		5EACB9211AFCC3CF0031F249 /* KatPHScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHScrapyFetcher.swift; sourceTree = "<group>"; };
+		5EACB9231AFCC3CF0031F249 /* ElanceHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElanceHtmlParser.swift; sourceTree = "<group>"; };
+		5EACB9241AFCC3CF0031F249 /* KatPHHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHHtmlParser.swift; sourceTree = "<group>"; };
+		5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlResultData.swift; sourceTree = "<group>"; };
+		5EACB9311AFCC3F60031F249 /* app-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-Header.h"; sourceTree = "<group>"; };
 		63E847E66BE5E0D02EC5A303 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA75DB8FA4D52F2FAF88ED /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,43 +76,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5E33849C1AFC9C9C0050F867 /* Business-Logic-Layer */ = {
-			isa = PBXGroup;
-			children = (
-				5E3384A91AFC9ED20050F867 /* Models */,
-				5E3384A41AFC9E860050F867 /* HtmlParser */,
-				5E33849F1AFC9DF20050F867 /* Fetcher */,
-			);
-			name = "Business-Logic-Layer";
-			sourceTree = "<group>";
-		};
-		5E33849F1AFC9DF20050F867 /* Fetcher */ = {
-			isa = PBXGroup;
-			children = (
-				5E3384A21AFC9E180050F867 /* KatPHScrapyFetcher.swift */,
-				5E3384A01AFC9E090050F867 /* GoogleScrapyFetcher.swift */,
-				5E33849D1AFC9DE50050F867 /* ElanceScrapyFetcher.swift */,
-			);
-			name = Fetcher;
-			sourceTree = "<group>";
-		};
-		5E3384A41AFC9E860050F867 /* HtmlParser */ = {
-			isa = PBXGroup;
-			children = (
-				5E3384A71AFC9EAE0050F867 /* ElanceHtmlParser.swift */,
-				5E3384A51AFC9EA10050F867 /* KatPHHtmlParser.swift */,
-			);
-			name = HtmlParser;
-			sourceTree = "<group>";
-		};
-		5E3384A91AFC9ED20050F867 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5E3384AA1AFC9EFF0050F867 /* HtmlResultData.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		5E3410441AFC980C00F19931 = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +98,7 @@
 		5E34104F1AFC980D00F19931 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				5E33849C1AFC9C9C0050F867 /* Business-Logic-Layer */,
+				5EACB9151AFCC3CF0031F249 /* Business-Logic-Layer */,
 				5E3410521AFC980D00F19931 /* AppDelegate.swift */,
 				5E3410541AFC980D00F19931 /* SeearchViewController.swift */,
 				5E3410561AFC980D00F19931 /* Main.storyboard */,
@@ -139,6 +112,7 @@
 		5E3410501AFC980D00F19931 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5EACB9311AFCC3F60031F249 /* app-Bridging-Header.h */,
 				5E3410511AFC980D00F19931 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -159,6 +133,72 @@
 				5E3410671AFC980D00F19931 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5EACB9151AFCC3CF0031F249 /* Business-Logic-Layer */ = {
+			isa = PBXGroup;
+			children = (
+				5EACB9161AFCC3CF0031F249 /* Afnetworking */,
+				5EACB9191AFCC3CF0031F249 /* Alamofire */,
+				5EACB91B1AFCC3CF0031F249 /* Fetcher */,
+				5EACB9221AFCC3CF0031F249 /* HtmlParser */,
+				5EACB9251AFCC3CF0031F249 /* Models */,
+			);
+			path = "Business-Logic-Layer";
+			sourceTree = "<group>";
+		};
+		5EACB9161AFCC3CF0031F249 /* Afnetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5EACB9171AFCC3CF0031F249 /* DownloadHtmlHelper.h */,
+				5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */,
+			);
+			path = Afnetworking;
+			sourceTree = "<group>";
+		};
+		5EACB9191AFCC3CF0031F249 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				5EACB91A1AFCC3CF0031F249 /* FetcherHelper.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		5EACB91B1AFCC3CF0031F249 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				5EACB91C1AFCC3CF0031F249 /* FetcherConstant.swift */,
+				5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */,
+				5EACB91E1AFCC3CF0031F249 /* Tasks */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		5EACB91E1AFCC3CF0031F249 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				5EACB91F1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift */,
+				5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */,
+				5EACB9211AFCC3CF0031F249 /* KatPHScrapyFetcher.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		5EACB9221AFCC3CF0031F249 /* HtmlParser */ = {
+			isa = PBXGroup;
+			children = (
+				5EACB9231AFCC3CF0031F249 /* ElanceHtmlParser.swift */,
+				5EACB9241AFCC3CF0031F249 /* KatPHHtmlParser.swift */,
+			);
+			path = HtmlParser;
+			sourceTree = "<group>";
+		};
+		5EACB9251AFCC3CF0031F249 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		AA1DBA0FD86D8D1351AAE7AD /* Pods */ = {
@@ -291,14 +331,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3384A11AFC9E090050F867 /* GoogleScrapyFetcher.swift in Sources */,
-				5E33849E1AFC9DE50050F867 /* ElanceScrapyFetcher.swift in Sources */,
-				5E3384A61AFC9EA10050F867 /* KatPHHtmlParser.swift in Sources */,
 				5E3410551AFC980D00F19931 /* SeearchViewController.swift in Sources */,
-				5E3384A81AFC9EAE0050F867 /* ElanceHtmlParser.swift in Sources */,
-				5E3384AB1AFC9EFF0050F867 /* HtmlResultData.swift in Sources */,
-				5E3384A31AFC9E180050F867 /* KatPHScrapyFetcher.swift in Sources */,
+				5EACB92B1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift in Sources */,
+				5EACB9291AFCC3CF0031F249 /* FetcherConstant.swift in Sources */,
+				5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */,
+				5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */,
+				5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */,
+				5EACB92D1AFCC3CF0031F249 /* KatPHScrapyFetcher.swift in Sources */,
 				5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */,
+				5EACB92F1AFCC3CF0031F249 /* KatPHHtmlParser.swift in Sources */,
+				5EACB92A1AFCC3CF0031F249 /* FetchProtocal.swift in Sources */,
+				5EACB9281AFCC3CF0031F249 /* FetcherHelper.swift in Sources */,
+				5EACB92E1AFCC3CF0031F249 /* ElanceHtmlParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +408,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "app/app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -402,6 +447,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "app/app-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
