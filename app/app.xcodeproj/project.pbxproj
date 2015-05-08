@@ -23,6 +23,7 @@
 		5EACB92E1AFCC3CF0031F249 /* ElanceHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9231AFCC3CF0031F249 /* ElanceHtmlParser.swift */; };
 		5EACB92F1AFCC3CF0031F249 /* KatPHHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9241AFCC3CF0031F249 /* KatPHHtmlParser.swift */; };
 		5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */; };
+		5EFD37691AFCCAB800F54341 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD37681AFCCAB800F54341 /* GDataHtmlHelper.m */; };
 		B223B903054BE7BA53859C50 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E847E66BE5E0D02EC5A303 /* libPods-app.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,8 @@
 		5EACB9241AFCC3CF0031F249 /* KatPHHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHHtmlParser.swift; sourceTree = "<group>"; };
 		5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlResultData.swift; sourceTree = "<group>"; };
 		5EACB9311AFCC3F60031F249 /* app-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EFD37671AFCCAB800F54341 /* GDataHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataHtmlHelper.h; sourceTree = "<group>"; };
+		5EFD37681AFCCAB800F54341 /* GDataHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataHtmlHelper.m; sourceTree = "<group>"; };
 		63E847E66BE5E0D02EC5A303 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA75DB8FA4D52F2FAF88ED /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +141,7 @@
 		5EACB9151AFCC3CF0031F249 /* Business-Logic-Layer */ = {
 			isa = PBXGroup;
 			children = (
+				5EFD37661AFCCA9D00F54341 /* GDataXML-HTML */,
 				5EACB9161AFCC3CF0031F249 /* Afnetworking */,
 				5EACB9191AFCC3CF0031F249 /* Alamofire */,
 				5EACB91B1AFCC3CF0031F249 /* Fetcher */,
@@ -199,6 +203,15 @@
 				5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5EFD37661AFCCA9D00F54341 /* GDataXML-HTML */ = {
+			isa = PBXGroup;
+			children = (
+				5EFD37671AFCCAB800F54341 /* GDataHtmlHelper.h */,
+				5EFD37681AFCCAB800F54341 /* GDataHtmlHelper.m */,
+			);
+			path = "GDataXML-HTML";
 			sourceTree = "<group>";
 		};
 		AA1DBA0FD86D8D1351AAE7AD /* Pods */ = {
@@ -336,6 +349,7 @@
 				5EACB9291AFCC3CF0031F249 /* FetcherConstant.swift in Sources */,
 				5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */,
 				5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */,
+				5EFD37691AFCCAB800F54341 /* GDataHtmlHelper.m in Sources */,
 				5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */,
 				5EACB92D1AFCC3CF0031F249 /* KatPHScrapyFetcher.swift in Sources */,
 				5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */,

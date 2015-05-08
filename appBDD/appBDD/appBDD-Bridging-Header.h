@@ -8,3 +8,5 @@
 
 
 #import <AFNetworking/AFNetworking.h>
+
+#import "GDataXMLNode.h"
