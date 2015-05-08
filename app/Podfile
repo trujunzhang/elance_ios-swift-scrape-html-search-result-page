@@ -1,0 +1,26 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+#use_frameworks!
+
+inhibit_all_warnings!
+
+# link_with 'app', 'appTests'
+
+def import_pods
+
+  pod 'AFNetworking'
+
+end
+
+target 'appRestApp', :exclusive => true do
+  # ________________common tools library___________________
+  import_pods
+
+end
+
+
+target 'appRestAppTests', :exclusive => true do
+  import_pods
+
+
+end
