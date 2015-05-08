@@ -5,12 +5,11 @@
 
 // Project Object-c files
 #import "DownloadHtmlHelper.h"
-#import "GDataHtmlHelper.h"
+#import "ObjectiveGumboHelper.h"
+
+#import <ObjectiveGumbo.h>
 
 #import <AFNetworking/AFNetworking.h>
-
-#import "GDataXMLNode.h"
-
 
 #import <libxml/HTMLtree.h>
 #import <libxml/xpath.h>

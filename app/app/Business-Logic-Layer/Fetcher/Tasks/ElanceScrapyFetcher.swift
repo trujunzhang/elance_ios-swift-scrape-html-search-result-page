@@ -27,14 +27,20 @@ class ElanceScrapyFetcher: FetchProtocal {
 
     func parseHtml(html: String) {
         let data:OGNode = ObjectiveGumbo.parseDocumentWithString(html)
-        let divArray:NSArray = data.elementsWithID("jobSearchResults")
+        let xpath = "//div[@id=\"jobSearchResults\"]//div[@data-pos]"
         
-        if(divArray.count == 1){
-            let searchResultsElement:OGElement = divArray[0] as! OGElement
-//             println("result is \( searchResultsElement.html())")
-            
-            self.parseResultsElement(searchResultsElement)
-        }
+        let divArray:NSArray = data.select(xpath)
+        
+        println("length is \(divArray.count)")
+        
+//        let divArray:NSArray = data.elementsWithID("jobSearchResults")
+//        
+//        if(divArray.count == 1){
+//            let searchResultsElement:OGElement = divArray[0] as! OGElement
+////             println("result is \( searchResultsElement.html())")
+//            
+//            self.parseResultsElement(searchResultsElement)
+//        }
     }
     
     func parseResultsElement(searchResultsElement:OGElement){

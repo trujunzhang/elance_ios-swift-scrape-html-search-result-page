@@ -15,7 +15,8 @@ class SeearchViewController: UITableViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        KatPHScrapyFetcher().fetchHtml { (object, sucess) -> Void in
+//        KatPHScrapyFetcher().
+            ElanceScrapyFetcher().fetchHtml { (object, sucess) -> Void in
 
         }
 
