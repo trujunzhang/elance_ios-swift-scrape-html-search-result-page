@@ -8,3 +8,6 @@
 
 
 #import <AFNetworking/AFNetworking.h>
+
+#import <libxml/HTMLtree.h>
+#import <libxml/xpath.h>

@@ -10,3 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 
 #import "GDataXMLNode.h"
+
+
+#import <libxml/HTMLtree.h>
+#import <libxml/xpath.h>

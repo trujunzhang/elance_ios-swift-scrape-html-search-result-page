@@ -12,6 +12,8 @@
 		5E3410581AFC980D00F19931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3410561AFC980D00F19931 /* Main.storyboard */; };
 		5E34105A1AFC980D00F19931 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3410591AFC980D00F19931 /* Images.xcassets */; };
 		5E34105D1AFC980D00F19931 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E34105B1AFC980D00F19931 /* LaunchScreen.xib */; };
+		5E59DABC1AFCD14300B79DE5 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59DAB91AFCD14300B79DE5 /* HTMLNode.swift */; };
+		5E59DABD1AFCD14300B79DE5 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59DABA1AFCD14300B79DE5 /* HTMLParser.swift */; };
 		5E86DE491AFCA8E10051490B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E86DE481AFCA8E10051490B /* Alamofire.framework */; };
 		5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */; };
 		5EACB9281AFCC3CF0031F249 /* FetcherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91A1AFCC3CF0031F249 /* FetcherHelper.swift */; };
@@ -23,7 +25,7 @@
 		5EACB92E1AFCC3CF0031F249 /* ElanceHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9231AFCC3CF0031F249 /* ElanceHtmlParser.swift */; };
 		5EACB92F1AFCC3CF0031F249 /* KatPHHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9241AFCC3CF0031F249 /* KatPHHtmlParser.swift */; };
 		5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */; };
-		5EFD37691AFCCAB800F54341 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD37681AFCCAB800F54341 /* GDataHtmlHelper.m */; };
+		5EF5F5EA1AFCD107006D253F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF5F5E91AFCD107006D253F /* libxml2.dylib */; };
 		B223B903054BE7BA53859C50 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E847E66BE5E0D02EC5A303 /* libPods-app.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		5E34105C1AFC980D00F19931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5E3410671AFC980D00F19931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E3410681AFC980D00F19931 /* appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appTests.swift; sourceTree = "<group>"; };
+		5E59DAB91AFCD14300B79DE5 /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNode.swift; sourceTree = "<group>"; };
+		5E59DABA1AFCD14300B79DE5 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		5E86DE481AFCA8E10051490B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5EACB9171AFCC3CF0031F249 /* DownloadHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadHtmlHelper.h; sourceTree = "<group>"; };
 		5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadHtmlHelper.m; sourceTree = "<group>"; };
@@ -51,8 +55,7 @@
 		5EACB9241AFCC3CF0031F249 /* KatPHHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHHtmlParser.swift; sourceTree = "<group>"; };
 		5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlResultData.swift; sourceTree = "<group>"; };
 		5EACB9311AFCC3F60031F249 /* app-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-Header.h"; sourceTree = "<group>"; };
-		5EFD37671AFCCAB800F54341 /* GDataHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataHtmlHelper.h; sourceTree = "<group>"; };
-		5EFD37681AFCCAB800F54341 /* GDataHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataHtmlHelper.m; sourceTree = "<group>"; };
+		5EF5F5E91AFCD107006D253F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		63E847E66BE5E0D02EC5A303 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA75DB8FA4D52F2FAF88ED /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF5F5EA1AFCD107006D253F /* libxml2.dylib in Frameworks */,
 				5E86DE491AFCA8E10051490B /* Alamofire.framework in Frameworks */,
 				B223B903054BE7BA53859C50 /* libPods-app.a in Frameworks */,
 			);
@@ -73,6 +77,7 @@
 		5D6CB5E0308FCC3E15A5CCC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EF5F5E91AFCD107006D253F /* libxml2.dylib */,
 				5E86DE481AFCA8E10051490B /* Alamofire.framework */,
 				63E847E66BE5E0D02EC5A303 /* libPods-app.a */,
 			);
@@ -138,10 +143,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5E59DAB81AFCD14300B79DE5 /* Swift-HTML-Parser */ = {
+			isa = PBXGroup;
+			children = (
+				5E59DAB91AFCD14300B79DE5 /* HTMLNode.swift */,
+				5E59DABA1AFCD14300B79DE5 /* HTMLParser.swift */,
+			);
+			name = "Swift-HTML-Parser";
+			path = "../../../dependencies/Swift-HTML-Parser";
+			sourceTree = "<group>";
+		};
 		5EACB9151AFCC3CF0031F249 /* Business-Logic-Layer */ = {
 			isa = PBXGroup;
 			children = (
-				5EFD37661AFCCA9D00F54341 /* GDataXML-HTML */,
+				5E59DAB81AFCD14300B79DE5 /* Swift-HTML-Parser */,
 				5EACB9161AFCC3CF0031F249 /* Afnetworking */,
 				5EACB9191AFCC3CF0031F249 /* Alamofire */,
 				5EACB91B1AFCC3CF0031F249 /* Fetcher */,
@@ -203,15 +218,6 @@
 				5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		5EFD37661AFCCA9D00F54341 /* GDataXML-HTML */ = {
-			isa = PBXGroup;
-			children = (
-				5EFD37671AFCCAB800F54341 /* GDataHtmlHelper.h */,
-				5EFD37681AFCCAB800F54341 /* GDataHtmlHelper.m */,
-			);
-			path = "GDataXML-HTML";
 			sourceTree = "<group>";
 		};
 		AA1DBA0FD86D8D1351AAE7AD /* Pods */ = {
@@ -349,13 +355,14 @@
 				5EACB9291AFCC3CF0031F249 /* FetcherConstant.swift in Sources */,
 				5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */,
 				5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */,
-				5EFD37691AFCCAB800F54341 /* GDataHtmlHelper.m in Sources */,
 				5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */,
 				5EACB92D1AFCC3CF0031F249 /* KatPHScrapyFetcher.swift in Sources */,
 				5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */,
+				5E59DABD1AFCD14300B79DE5 /* HTMLParser.swift in Sources */,
 				5EACB92F1AFCC3CF0031F249 /* KatPHHtmlParser.swift in Sources */,
 				5EACB92A1AFCC3CF0031F249 /* FetchProtocal.swift in Sources */,
 				5EACB9281AFCC3CF0031F249 /* FetcherHelper.swift in Sources */,
+				5E59DABC1AFCD14300B79DE5 /* HTMLNode.swift in Sources */,
 				5EACB92E1AFCC3CF0031F249 /* ElanceHtmlParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

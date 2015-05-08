@@ -12,22 +12,39 @@ class ElanceScrapyFetcher: FetchProtocal {
     
     func fetchHtml(completeHandler: ObjectHandler){
         let url = "\(elance_host)-scrapy"
-//        DownloadHtmlHelper.downlaodHtml(queryUrl)
         DownloadHtmlHelper.downlaodHtml(url) { (object, error) -> Void in
             if(error == nil){
-                let x = 0
-            }else{
-                let html:NSData = object as! NSData
+                let html:String = object as! String
                 self.parseHtml(html)
+            }else{
+                let x = 0
             }
         }
     }
     
     
-    func parseHtml(html:NSData){
-//        println("parse html is \(html)")
-
-        GDataHtmlHelper().startHTMLParsing(html)
+    func parseHtml(html:String){
+        var err : NSError?
+        var parser     = HTMLParser(html: html, error: &err)
+        if err != nil {
+            println(err)
+            exit(1)
+        }
+        
+        var bodyNode   = parser.body
+        
+        if let inputNodes = bodyNode?.findChildTags("b") {
+            for node in inputNodes {
+                println(node.contents)
+            }
+        }
+        
+        if let inputNodes = bodyNode?.findChildTags("a") {
+            for node in inputNodes {
+                println(node.contents)
+                println(node.getAttributeNamed("href"))
+            }
+        }
     }
     
 }

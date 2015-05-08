@@ -17,6 +17,9 @@
     GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithHTMLData:data error:NULL];
     if (doc) {
         NSString *xmlString = [[doc rootElement] XMLString];
+        NSDictionary *myNS = @{};
+        NSError *error = nil;
+        [doc.rootElement nodesForXPath:@"*/[@mc:edit]" namespaces:myNS error:&error];
         NSLog(@"xmlString = %@", xmlString);
     }
 }
