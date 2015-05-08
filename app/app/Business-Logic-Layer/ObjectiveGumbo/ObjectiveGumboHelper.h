@@ -10,4 +10,5 @@
 
 @interface ObjectiveGumboHelper : NSObject
 
++ (void)fetchHtmlAndParse;
 @end

@@ -12,7 +12,8 @@ class ElanceScrapyFetcher: FetchProtocal {
 
 
     func fetchHtml(completeHandler: ObjectHandler) {
-        let url = "https://www.elance.com/r/jobs/q-scrapy"
+        let url = "https://www.elance.com/r/jobs/q-scrapy/"
+
         DownloadHtmlHelper.downlaodHtml(url) {
             (object, error) -> Void in
             if (error == nil) {
@@ -24,31 +25,43 @@ class ElanceScrapyFetcher: FetchProtocal {
         }
     }
 
-
     func parseHtml(html: String) {
-        println("html is \(html)")
-
-        var err: NSError?
-        var parser = HTMLParser(html: html, error: &err)
-        if err != nil {
-            println(err)
-            exit(1)
+        let data:OGNode = ObjectiveGumbo.parseDocumentWithString(html)
+        let divArray:NSArray = data.elementsWithID("jobSearchResults")
+        
+        if(divArray.count == 1){
+            let searchResultsElement:OGElement = divArray[0] as! OGElement
+//             println("result is \( searchResultsElement.html())")
+            
+            self.parseResultsElement(searchResultsElement)
+        }
+    }
+    
+    func parseResultsElement(searchResultsElement:OGElement){
+        let divArray:NSArray = searchResultsElement.elementsWithClass("jobCard")
+        
+        println("divArray is \(divArray.count)")
+        for resultElement in divArray{
+            self.parseResultelement(resultElement as! OGElement)
+        }
+    }
+    
+    func parseResultelement(searchResultsElement:OGElement){
+        var divArray:NSArray = searchResultsElement.elementsWithClass("title")
+        
+        var title = ""
+        var link = ""
+        var content = ""
+        
+        if(divArray.count == 1){
+            let element:OGElement = divArray[0] as! OGElement
+//            title = element.attributes[""] as String
+            println("\(element.attributes)")
         }
 
-//        var bodyNode = parser.body?.findNodeById("jobSearchResults")
-
-//        if let inputNodes = bodyNode?.findChildClasss("jobCard") {
-//            for node in inputNodes {
-//                println(node.contents)
-//            }
-//        }
-
-        //        if let inputNodes = bodyNode?.findChildTags("a") {
-        //            for node in inputNodes {
-        //                println(node.contents)
-        //                println(node.getAttributeNamed("href"))
-        //            }
-        //        }
+        
+//        println("divArray is \(divArray.count)")
+        //        jobCard
     }
 
 }

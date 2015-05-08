@@ -9,5 +9,13 @@
 import Foundation
 
 class HtmlResultData {
+    var title = ""
+    var link = ""
+    var content = ""
     
+    init(title:String,link:String,content:String){
+        self.title = title
+        self.link  = link
+        self.content = content
+    }
 }

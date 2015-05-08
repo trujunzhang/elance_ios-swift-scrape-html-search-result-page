@@ -9,36 +9,61 @@
 import Foundation
 import Alamofire
 
-class KatPHScrapyFetcher: NSObject {
+class KatPHScrapyFetcher: FetchProtocal {
     
-    static let sharedInstance : KatPHScrapyFetcher = KatPHScrapyFetcher()
     
-    func test(){
+    
+    func fetchHtml(completeHandler: ObjectHandler) {
+        let url = kickass_host
         
-//        Alamofire.download(.GET, "https://www.google.com/#newwindow=1", parameters: ["q": "swift"]), { (temporaryURL, response) in
-        
-        Alamofire.download(.GET, "http://www.baidu.com", { (temporaryURL, response) in
-
-//            Alamofire.download(.GET, "https://www.google.com", { (temporaryURL, response) in
-            
-                
-            if let directoryURL = NSFileManager.defaultManager()
-                .URLsForDirectory(.DocumentDirectory,
-                    inDomains: .UserDomainMask)[0]
-                as? NSURL {
-                    let pathComponent = response.suggestedFilename
-                    
-//                    let pathComponent = "html"
-                    
-                    println(response)
-                    println("temporaryURL is \(temporaryURL)")
-                    
-                    return directoryURL.URLByAppendingPathComponent(pathComponent!)
+        DownloadHtmlHelper.downlaodHtml(url) {
+            (object, error) -> Void in
+            if (error == nil) {
+                let html: String = object as! String
+                self.parseHtml(html)
+            } else {
+                let x = 0
             }
-
-            return temporaryURL
-        })
-
+        }
+    }
+    
+    func parseHtml(html: String) {
+        let data:OGNode = ObjectiveGumbo.parseDocumentWithString(html)
+        let divArray:NSArray = data.elementsWithClass("data")
+        
+        if(divArray.count == 1){
+            let searchResultsElement:OGElement = divArray[0] as! OGElement
+            //            println("result is \( searchResultsElement.html())")
+            
+            self.parseResultsElement(searchResultsElement)
+        }
+    }
+    
+    func parseResultsElement(searchResultsElement:OGElement){
+        let divArray:NSArray = searchResultsElement.elementsWithClass("jobCard")
+        
+        println("divArray is \(divArray.count)")
+        for resultElement in divArray{
+            self.parseResultelement(resultElement as! OGElement)
+        }
+    }
+    
+    func parseResultelement(searchResultsElement:OGElement){
+        var divArray:NSArray = searchResultsElement.elementsWithClass("title")
+        
+        var title = ""
+        var link = ""
+        var content = ""
+        
+        if(divArray.count == 1){
+            let element:OGElement = divArray[0] as! OGElement
+            //            title = element.attributes[""] as String
+            println("\(element.attributes)")
+        }
+        
+        
+        //        println("divArray is \(divArray.count)")
+        //        jobCard
     }
     
 }

@@ -11,16 +11,16 @@
 
 @implementation ObjectiveGumboHelper
 
--(void)fetchHtmlAndParse{
-//    OGNode * data = [ObjectiveGumbo parseDocumentWithUrl:[NSURL URLWithString:@"http://news.ycombinator.com"]];
-//    NSArray * tableRows = [data elementsWithClass:@"title"];
-//    for (OGElement * tableRow in tableRows)
-//    {
-//        if (tableRow.children.count > 1)
-//        {
-//            OGElement * link = tableRow.children[0];
-//            NSLog(@"%@", link.attributes[@"href"]);
-//        }
-//    }
++(void)fetchHtmlAndParse{
+    OGNode * data = [ObjectiveGumbo parseDocumentWithUrl:[NSURL URLWithString:@"http://news.ycombinator.com"] encoding:NSUnicodeStringEncoding];
+    NSArray * tableRows = [data elementsWithClass:@"title"];
+    for (OGElement * tableRow in tableRows)
+    {
+        if (tableRow.children.count > 1)
+        {
+            OGElement * link = tableRow.children[0];
+            NSLog(@"%@", link.attributes[@"href"]);
+        }
+    }
 }
 @end
