@@ -16,7 +16,6 @@
 		5E34105D1AFC980D00F19931 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E34105B1AFC980D00F19931 /* LaunchScreen.xib */; };
 		5E6951721AFDA3C100E23792 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6951711AFDA3C100E23792 /* RegExCategories.m */; };
 		5E80C8211AFCEB35004B47D3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80C8201AFCEB35004B47D3 /* StringExtensions.swift */; };
-		5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */; };
 		5EACB92A1AFCC3CF0031F249 /* FetchProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */; };
 		5EACB92B1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91F1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift */; };
 		5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */; };
@@ -58,8 +57,6 @@
 		5E6951711AFDA3C100E23792 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegExCategories.m; path = "Objective-C-RegEx-Categories/RegExCategories.m"; sourceTree = "<group>"; };
 		5E80C8201AFCEB35004B47D3 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Utils/StringExtensions.swift; sourceTree = "<group>"; };
 		5E86DE481AFCA8E10051490B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		5EACB9171AFCC3CF0031F249 /* DownloadHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadHtmlHelper.h; sourceTree = "<group>"; };
-		5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadHtmlHelper.m; sourceTree = "<group>"; };
 		5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchProtocal.swift; sourceTree = "<group>"; };
 		5EACB91F1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElanceScrapyFetcher.swift; sourceTree = "<group>"; };
 		5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleScrapyFetcher.swift; sourceTree = "<group>"; };
@@ -182,20 +179,10 @@
 			children = (
 				5E69516F1AFDA3B500E23792 /* Objective-C-RegEx-Categories */,
 				5E80C81F1AFCEB0C004B47D3 /* Utils */,
-				5EACB9161AFCC3CF0031F249 /* Afnetworking */,
 				5EACB91B1AFCC3CF0031F249 /* Fetcher */,
 				5EACB9251AFCC3CF0031F249 /* Models */,
 			);
 			path = "Business-Logic-Layer";
-			sourceTree = "<group>";
-		};
-		5EACB9161AFCC3CF0031F249 /* Afnetworking */ = {
-			isa = PBXGroup;
-			children = (
-				5EACB9171AFCC3CF0031F249 /* DownloadHtmlHelper.h */,
-				5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */,
-			);
-			path = Afnetworking;
 			sourceTree = "<group>";
 		};
 		5EACB91B1AFCC3CF0031F249 /* Fetcher */ = {
@@ -344,7 +331,6 @@
 			files = (
 				5E3410551AFC980D00F19931 /* SeearchViewController.swift in Sources */,
 				5EACB92B1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift in Sources */,
-				5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */,
 				5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */,
 				5E6951721AFDA3C100E23792 /* RegExCategories.m in Sources */,
 				5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */,

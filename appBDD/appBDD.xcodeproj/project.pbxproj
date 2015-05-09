@@ -26,10 +26,6 @@
 		5EA13CFC1AFDABAA00E7DEEC /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CF51AFDAB1700E7DEEC /* RegExCategories.m */; };
 		5EBB084F1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */; };
 		5EC087C51AFCA92000B41FE9 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */; };
-		5EC2A5A41AFCBF9B0003B22D /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */; };
-		5EC2A5A61AFCC0400003B22D /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */; };
-		5EC2A5A81AFCC1BA0003B22D /* FetcherConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A71AFCC1BA0003B22D /* FetcherConstant.swift */; };
-		5EC2A5A91AFCC23F0003B22D /* FetcherConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A71AFCC1BA0003B22D /* FetcherConstant.swift */; };
 		5EC2A5AB1AFCC2C60003B22D /* FetchProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5AA1AFCC2C60003B22D /* FetchProtocal.swift */; };
 		5EC2A5AC1AFCC2CF0003B22D /* FetchProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5AA1AFCC2C60003B22D /* FetchProtocal.swift */; };
 		5EC2A5B11AFCC35B0003B22D /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5AE1AFCC35B0003B22D /* ElanceScrapyFetcher.swift */; };
@@ -76,10 +72,7 @@
 		5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHScrapyFetcherTests.swift; sourceTree = "<group>"; };
 		5EC087B41AFCA90800B41FE9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlResultData.swift; sourceTree = "<group>"; };
-		5EC2A5A21AFCBF9B0003B22D /* DownloadHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadHtmlHelper.h; path = Afnetworking/DownloadHtmlHelper.h; sourceTree = "<group>"; };
-		5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadHtmlHelper.m; path = Afnetworking/DownloadHtmlHelper.m; sourceTree = "<group>"; };
 		5EC2A5A51AFCBFD40003B22D /* appBDD-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "appBDD-Bridging-Header.h"; sourceTree = "<group>"; };
-		5EC2A5A71AFCC1BA0003B22D /* FetcherConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherConstant.swift; sourceTree = "<group>"; };
 		5EC2A5AA1AFCC2C60003B22D /* FetchProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchProtocal.swift; sourceTree = "<group>"; };
 		5EC2A5AE1AFCC35B0003B22D /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ElanceScrapyFetcher.swift; path = Tasks/ElanceScrapyFetcher.swift; sourceTree = "<group>"; };
 		5EC2A5AF1AFCC35B0003B22D /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleScrapyFetcher.swift; path = Tasks/GoogleScrapyFetcher.swift; sourceTree = "<group>"; };
@@ -252,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				5EA13CEF1AFDAB1700E7DEEC /* Objective-C-RegEx-Categories */,
-				5EC2A5A11AFCBF540003B22D /* Afnetworking */,
 				5EC087B71AFCA92000B41FE9 /* Fetcher */,
 				5EC087BE1AFCA92000B41FE9 /* Models */,
 			);
@@ -266,7 +258,6 @@
 				5EC2A5AD1AFCC3370003B22D /* Tasks */,
 				5EA13CED1AFDAABF00E7DEEC /* FetcherBaseParser.swift */,
 				5EC2A5AA1AFCC2C60003B22D /* FetchProtocal.swift */,
-				5EC2A5A71AFCC1BA0003B22D /* FetcherConstant.swift */,
 			);
 			path = Fetcher;
 			sourceTree = "<group>";
@@ -277,15 +268,6 @@
 				5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		5EC2A5A11AFCBF540003B22D /* Afnetworking */ = {
-			isa = PBXGroup;
-			children = (
-				5EC2A5A21AFCBF9B0003B22D /* DownloadHtmlHelper.h */,
-				5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */,
-			);
-			name = Afnetworking;
 			sourceTree = "<group>";
 		};
 		5EC2A5AD1AFCC3370003B22D /* Tasks */ = {
@@ -469,14 +451,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EC2A5A41AFCBF9B0003B22D /* DownloadHtmlHelper.m in Sources */,
 				5EA13CFA1AFDAB1700E7DEEC /* RegExCategories.m in Sources */,
 				5EC2A5B11AFCC35B0003B22D /* ElanceScrapyFetcher.swift in Sources */,
 				5EC2A5B31AFCC35B0003B22D /* KatPHScrapyFetcher.swift in Sources */,
 				5EC2A5B21AFCC35B0003B22D /* GoogleScrapyFetcher.swift in Sources */,
 				5EC2A5AB1AFCC2C60003B22D /* FetchProtocal.swift in Sources */,
 				5E6AF6351AFC985C00FDE994 /* ViewController.swift in Sources */,
-				5EC2A5A81AFCC1BA0003B22D /* FetcherConstant.swift in Sources */,
 				5EA13CEE1AFDAABF00E7DEEC /* FetcherBaseParser.swift in Sources */,
 				5EC087C51AFCA92000B41FE9 /* HtmlResultData.swift in Sources */,
 				5E6AF6331AFC985C00FDE994 /* AppDelegate.swift in Sources */,
@@ -488,14 +468,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */,
-				5EC2A5A91AFCC23F0003B22D /* FetcherConstant.swift in Sources */,
 				5EC2A5B51AFCC36F0003B22D /* GoogleScrapyFetcher.swift in Sources */,
 				5E6B91281AFDB5CB00B317AD /* HtmlResultData.swift in Sources */,
 				5EC2A5AC1AFCC2CF0003B22D /* FetchProtocal.swift in Sources */,
 				5EC2A5B41AFCC36B0003B22D /* ElanceScrapyFetcher.swift in Sources */,
 				5EA13CFB1AFDABA500E7DEEC /* FetcherBaseParser.swift in Sources */,
 				5EA13CFC1AFDABAA00E7DEEC /* RegExCategories.m in Sources */,
-				5EC2A5A61AFCC0400003B22D /* DownloadHtmlHelper.m in Sources */,
 				5EBB084F1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift in Sources */,
 				5E6F56F01AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift in Sources */,
 				5EEC42521AFCC89600C2E44E /* ElanceScrapyFetcherTests.swift in Sources */,

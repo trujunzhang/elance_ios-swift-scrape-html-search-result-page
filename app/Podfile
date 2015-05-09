@@ -8,8 +8,6 @@ inhibit_all_warnings!
 
 def import_pods
 
-  pod "AFNetworking", :path => "../dependencies/AFNetworking"
-
   pod "GDataXML-HTML", :path => "../dependencies/GDataXML-HTML"
 
 end

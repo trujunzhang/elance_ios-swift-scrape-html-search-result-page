@@ -4,10 +4,6 @@
 
 
 // Project Object-c files
-#import "DownloadHtmlHelper.h"
-
-
-#import <AFNetworking/AFNetworking.h>
 
 #import <libxml/HTMLtree.h>
 #import <libxml/xpath.h>
