@@ -14,14 +14,15 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     
     
     let model_xpath_dict = [
-        "root": "//div[@id='jobSearchResults']//div[@data-pos]",
-        "title": "//div/a[1]/text()",
-        "href": "//div/a[1]/@href",
-        "content": "//div/text()[not(parent::span)]"
+        "root":               "//div[@id='jobSearchResults']//div[@data-pos]",
+        "title":              "//div/a/text()",
+        "href":               "//div/a/@href",
+        "contentBlock":       "//div//div[@id][@class]",
+        "content":            "//div[@class][@id]/text()"
     ]
     
     override func getHost() -> String {
-        return "https://www.elance.com/r/jobs/q-\(searchWish)/"
+        return "\(elance_host)\(searchWish)/"
     }
     
     override func fetchHtml(search:String,completeHandler: ObjectHandler) {
@@ -30,11 +31,12 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     
     override func parseHtml(html: String) -> NSMutableArray {
         var array: NSMutableArray = NSMutableArray()
-        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: html, error: nil)
+        let doc: GDataXMLDocument = makeNewDocumentFromSnipet(html)
         let searchResults: NSArray = doc.nodesForXPath(model_xpath_dict["root"], error: nil)
         
         for resultElement in searchResults {
-            let data: HtmlResultData = self.parseResultElement(resultElement as! GDataXMLElement) // used
+            let divDoc: GDataXMLDocument =  makeNewDocumentFromSnipet(resultElement.XMLString())
+            let data: HtmlResultData = self.parseResultElement(divDoc.rootElement())
             if(data.title.isEmpty == false){
                 array.addObject(data)
             }
@@ -44,27 +46,37 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     }
     
     func parseResultElement(element: GDataXMLElement) -> HtmlResultData {
-        // retrieve title
-        var titleNode: GDataXMLNode = element.childAtIndex(1)
-        var title = self.parseElement(titleNode.XMLString(), xpath: model_xpath_dict["title"]!)
-        // retrieve a href
-        var hrefNode: GDataXMLNode = element.childAtIndex(1)
-        var href = self.parseElement(hrefNode.XMLString(), xpath: model_xpath_dict["href"]!)
-        // retrieve description
-        let contentNode: GDataXMLNode = element.childAtIndex(5)
-        var content = self.parseElement(contentNode.XMLString(), xpath: model_xpath_dict["content"]!)
+        // get title
+        var titleNode: GDataXMLNode = element.firstNodeForXPath(model_xpath_dict["title"]!, error: nil)
+        var title = titleNode.XMLString()
+        // get a href
+        var hrefNode: GDataXMLNode = element.firstNodeForXPath(model_xpath_dict["href"]!, error: nil)
+        var href = hrefNode.XMLString()
+        // get description
+        var content = parseSpecialContentNode(element)
         
         return HtmlResultData(title: title, link: href, content: content)
     }
     
-    func parseElement(xmlString: String, xpath: String) -> String {
+    func parseSpecialContentNode(element: GDataXMLElement) -> String{
+        // get div class named 'desc'
+        let contentNode: GDataXMLNode = element.firstNodeForXPath(model_xpath_dict["contentBlock"]!, error: nil)
+        let contentSource = trimSpecialTags(contentNode.XMLString())
+        
+        // parse new div class named 'desc'
+        let descDoc: GDataXMLDocument =  makeNewDocumentFromSnipet(contentSource)
+        let node:GDataXMLNode = descDoc.rootElement().firstNodeForXPath(model_xpath_dict["content"]!, error: nil)
+        
+        var content =  node.XMLString()
+        
+        return content
+    }
+    
+    func trimSpecialTags(htmlSnippet:String) -> String{
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
-        let result = xmlString.replace(rx, with: "")
+        let result = htmlSnippet.replace(rx, with: "")
         
-        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: result, error: nil)
-        var nodeText = getNodeText(doc, xpath: xpath)
-        
-        return nodeText
+        return result
     }
     
 }

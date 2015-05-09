@@ -13,7 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        ElanceScrapyFetcher().fetchHtml("ios", completeHandler: { (object, sucess) -> Void in
+            if((sucess) != nil){
+            }else{
 
+            }
+        })
     }
 
     override func didReceiveMemoryWarning() {

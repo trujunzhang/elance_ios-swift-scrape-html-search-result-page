@@ -45,15 +45,8 @@ class FetcherBaseParser: FetchProtocal {
     }
     
     // MARK: common method
-    func getNodeText(element: GDataXMLDocument, xpath: String) -> String {
-        var text = ""
-        let array: NSArray = element.nodesForXPath(xpath, error: nil)
-        
-        if (array.count == 1) {
-            let titleNode: GDataXMLNode = array[0] as! GDataXMLNode
-            text = titleNode.XMLString()
-        }
-        
-        return text
+    func makeNewDocumentFromSnipet(htmlSnippet: String) -> GDataXMLDocument{
+        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: htmlSnippet, error: nil)
+        return doc
     }
 }
