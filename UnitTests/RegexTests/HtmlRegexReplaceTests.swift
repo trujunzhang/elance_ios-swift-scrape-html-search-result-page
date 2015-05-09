@@ -31,7 +31,22 @@ class HtmlRegexReplaceTests: XCTestCase {
         return data!
     }
 
-    func testParseContent() {
+    func testParseTitle() {
+        let html = readFile("title")
+//        println("\(html)")
+
+        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: html, error: nil)
+        let titleResults: NSArray = doc.nodesForXPath("//div[@id='jobSearchResults']//div[@data-pos]", error: nil)
+
+        println("length in getNodeText is \(titleResults.count)")
+
+        let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
+        let text = titleNode.XMLString()
+
+        println("\(titleNode.XMLString())")
+    }
+
+    func _testParseContent() {
         let html = readFile("content")
 //        println("\(html)")
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
