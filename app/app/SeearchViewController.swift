@@ -27,6 +27,7 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
     }
     
     func retrieveHtml(search:String){
+        self.title = "Search '\(search)'"
         self.emptyTableView()
         
         ElanceScrapyFetcher().fetchHtml(search, completeHandler: { (object, sucess) -> Void in
