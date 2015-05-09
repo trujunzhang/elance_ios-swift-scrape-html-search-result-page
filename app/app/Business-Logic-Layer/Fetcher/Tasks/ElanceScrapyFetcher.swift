@@ -21,7 +21,8 @@ class ElanceScrapyFetcher: FetcherBaseParser {
             "root": "//div[@id='jobSearchResults']//div[@data-pos]",
             "title": "//div/a[1]/text()",
 //            "content": "//div[contains(@class,'desc') and contains(@class ,'collapsed')]/text()",
-            "content": "//*[@class='desc']/text()",
+//            "content": "//div/text()",
+            "content": "//div/text()[not(parent::span)]"
 //                                "content":"//div[contains(@class,'desc')]/text()"
             //        "content":"div[3]/text()"
 //        "content":"div[3]"
@@ -40,24 +41,29 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         let searchResults: NSArray = doc.nodesForXPath(model_xpath_dict["root"], error: nil)
 
         for resultElement in searchResults {
-            self.parseResultElement(resultElement as! GDataXMLElement) // used
+//            self.parseResultElement(resultElement as! GDataXMLElement) // used
         }
 
-//         self.parseResultelement(searchResults[1] as! GDataXMLElement) // test
-//        self.parseResultelement(searchResults[4] as! GDataXMLElement) // test
-//        self.parseResultElement((searchResults[4] as! GDataXMLElement)) // test
+//        self.parseResultElement(searchResults[1] as! GDataXMLElement) // test
+        self.parseResultElement(searchResults[4] as! GDataXMLElement) // test
     }
 
     func parseResultElement(element: GDataXMLElement) {
-        let node: GDataXMLNode = element.childAtIndex(1)
-        var title = self.parseElement(node.XMLString(), xpath: model_xpath_dict["title"]!)
-        println("\(title)")
+        // retrieve title
+//        var node: GDataXMLNode = element.childAtIndex(1)
+//        var title = self.parseElement(node.XMLString(), xpath: model_xpath_dict["title"]!)
+//        println("\(title)")
+        // retrieve description
+        let contentNode: GDataXMLNode = element.childAtIndex(5)
+        var content = self.parseElement(contentNode.XMLString(), xpath: model_xpath_dict["content"]!)
+        println("content is \(content)")
     }
 
     func parseElement(xmlString: String, xpath: String) -> String {
-//        println("xmlString is \(xmlString)")
+        let html: String = xmlString.replace("&nbsp;", withString: "")
+//        println("\(xmlString)")
 
-        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: xmlString, error: nil)
+        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: html, error: nil)
         var title = getNodeText(doc, xpath: xpath)
 
         return title
