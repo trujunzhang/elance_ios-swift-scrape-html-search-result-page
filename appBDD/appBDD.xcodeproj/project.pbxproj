@@ -19,6 +19,9 @@
 		5E6AF63D1AFC985C00FDE994 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF63B1AFC985C00FDE994 /* LaunchScreen.xib */; };
 		5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF6481AFC985C00FDE994 /* appBDDTests.swift */; };
 		5E6F56F01AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F56EF1AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift */; };
+		5E80F9441AFDAF4200C5C038 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9411AFDAF4200C5C038 /* content.html */; };
+		5E80F9451AFDAF4200C5C038 /* searchElement.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9421AFDAF4200C5C038 /* searchElement.html */; };
+		5E80F9461AFDAF4200C5C038 /* title.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9431AFDAF4200C5C038 /* title.html */; };
 		5E8DE0BD1AFCCB9300E2B590 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */; };
 		5E8DE0BE1AFCCB9900E2B590 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */; };
 		5E9074761AFCA13600C262B2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9074751AFCA13600C262B2 /* Nimble.framework */; };
@@ -74,6 +77,9 @@
 		5E6AF6471AFC985C00FDE994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E6AF6481AFC985C00FDE994 /* appBDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appBDDTests.swift; sourceTree = "<group>"; };
 		5E6F56EF1AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HtmlRegexReplaceTests.swift; path = ../../UnitTests/RegexTests/HtmlRegexReplaceTests.swift; sourceTree = "<group>"; };
+		5E80F9411AFDAF4200C5C038 /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
+		5E80F9421AFDAF4200C5C038 /* searchElement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = searchElement.html; sourceTree = "<group>"; };
+		5E80F9431AFDAF4200C5C038 /* title.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = title.html; sourceTree = "<group>"; };
 		5E8DE0BB1AFCCB9300E2B590 /* GDataHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataHtmlHelper.h; sourceTree = "<group>"; };
 		5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataHtmlHelper.m; sourceTree = "<group>"; };
 		5E9074751AFCA13600C262B2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 		5E6AF62F1AFC985C00FDE994 /* appBDD */ = {
 			isa = PBXGroup;
 			children = (
+				5E80F9401AFDAF4200C5C038 /* xpath */,
 				5EC087B61AFCA92000B41FE9 /* Business-Logic-Layer */,
 				5E6AF6321AFC985C00FDE994 /* AppDelegate.swift */,
 				5E6AF6341AFC985C00FDE994 /* ViewController.swift */,
@@ -229,6 +236,17 @@
 				5E6F56EF1AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift */,
 			);
 			name = RegexTests;
+			sourceTree = "<group>";
+		};
+		5E80F9401AFDAF4200C5C038 /* xpath */ = {
+			isa = PBXGroup;
+			children = (
+				5E80F9411AFDAF4200C5C038 /* content.html */,
+				5E80F9421AFDAF4200C5C038 /* searchElement.html */,
+				5E80F9431AFDAF4200C5C038 /* title.html */,
+			);
+			name = xpath;
+			path = ../../UnitTests/xpath;
 			sourceTree = "<group>";
 		};
 		5E8DE0BA1AFCCB9300E2B590 /* GDataXML-HTML */ = {
@@ -425,7 +443,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6AF6381AFC985C00FDE994 /* Main.storyboard in Resources */,
+				5E80F9461AFDAF4200C5C038 /* title.html in Resources */,
 				5E6AF63D1AFC985C00FDE994 /* LaunchScreen.xib in Resources */,
+				5E80F9441AFDAF4200C5C038 /* content.html in Resources */,
+				5E80F9451AFDAF4200C5C038 /* searchElement.html in Resources */,
 				5E6AF63A1AFC985C00FDE994 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
