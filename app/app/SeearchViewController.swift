@@ -19,8 +19,6 @@ class SeearchViewController: UITableViewController{
             ElanceScrapyFetcher().fetchHtml { (object, sucess) -> Void in
 
         }
-
-//        ObjectiveGumboHelper.fetchHtmlAndParse()
     }
     
     override func didReceiveMemoryWarning() {

@@ -26,7 +26,6 @@
 		5EA13CFB1AFDABA500E7DEEC /* FetcherBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CED1AFDAABF00E7DEEC /* FetcherBaseParser.swift */; };
 		5EA13CFC1AFDABAA00E7DEEC /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CF51AFDAB1700E7DEEC /* RegExCategories.m */; };
 		5EBB084F1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */; };
-		5EBB08511AFCAA5400EDD026 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC087B41AFCA90800B41FE9 /* Alamofire.framework */; };
 		5EC087C51AFCA92000B41FE9 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */; };
 		5EC2A5A41AFCBF9B0003B22D /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */; };
 		5EC2A5A61AFCC0400003B22D /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */; };
@@ -102,7 +101,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E05D26F59C35B79B325D9FE /* libPods-appBDD.a in Frameworks */,
-				5EBB08511AFCAA5400EDD026 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +321,6 @@
 				5E6AF62A1AFC985C00FDE994 /* Frameworks */,
 				5E6AF62B1AFC985C00FDE994 /* Resources */,
 				94535E2C9057B309F4D4DA85 /* Copy Pods Resources */,
-				5EBB08501AFCA9FA00EDD026 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -415,20 +412,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5EBB08501AFCA9FA00EDD026 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		7FD71F649B83C15FC742E78C /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

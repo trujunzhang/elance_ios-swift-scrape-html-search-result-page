@@ -9,5 +9,5 @@
 import Foundation
 
 class GoogleScrapyFetcher: NSObject {
-    static let sharedInstance : GoogleScrapyFetcher = GoogleScrapyFetcher()
+    
 }

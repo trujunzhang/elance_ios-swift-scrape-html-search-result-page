@@ -10,8 +10,6 @@ def import_pods
 
   pod "AFNetworking", :path => "../dependencies/AFNetworking"
 
-  pod "ObjectiveGumbo", :path => "../dependencies/ObjectiveGumbo"
-
   pod "GDataXML-HTML", :path => "../dependencies/GDataXML-HTML"
 
 end

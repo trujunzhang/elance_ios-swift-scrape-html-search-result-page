@@ -5,9 +5,6 @@
 
 // Project Object-c files
 #import "DownloadHtmlHelper.h"
-#import "ObjectiveGumboHelper.h"
-
-#import <ObjectiveGumbo.h>
 
 #import <AFNetworking/AFNetworking.h>
 

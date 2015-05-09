@@ -68,27 +68,4 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         return nodeText
     }
     
-    func parseResultelement123(element: GDataXMLElement) {
-        println("element is \(element)")
-        //        let title_xpath = "div[1]/a[1]/text()"
-        
-        //        var title = getNodeText(element,xpath:model_xpath_dict["title"]!)
-        var link = ""
-        //        var content = getNodeText(element, xpath: model_xpath_dict["content"]!)
-        
-        //        println("\(title)")
-        //        println("xxxxx")
-        //        println("content is \(content)")
-        
-        //        let titleResults:NSArray = element.nodesForXPath(title_xpath, error: nil)
-        //        if(titleResults.count == 1){
-        //            let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
-        //            title =  titleNode.XMLString()
-        //            println("\(titleNode.XMLString())")
-        //        }
-        
-        
-    }
-    
-    
 }
