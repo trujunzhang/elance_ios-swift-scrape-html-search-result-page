@@ -47,7 +47,7 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
-*.xcworkspace/
+#*.xcworkspace/
 
 ### Objective-C template
 # Xcode
@@ -75,8 +75,8 @@ DerivedData
 # you should judge for yourself, the pros and cons are mentioned at:
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
 #
-Pods/
-Podfile.lock
+#Pods/
+#Podfile.lock
 
 # customize plugins
 .DS_Store
