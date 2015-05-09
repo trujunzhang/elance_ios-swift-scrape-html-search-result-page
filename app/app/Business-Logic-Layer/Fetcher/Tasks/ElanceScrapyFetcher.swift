@@ -20,8 +20,6 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     ]
 
     override func getHost() -> String {
-//        let host = "https://www.elance.com/r/jobs/q-\(searchWish)/"
-//        return "https://www.elance.com/r/jobs/q-scrapy/"
         return "https://www.elance.com/r/jobs/q-\(searchWish)/"
     }
     

@@ -21,7 +21,6 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
         
         // Do any additional setup after loading the view, typically from a nib.
         searchBar.delegate = self
-        
         searchBar.text = "scrapy"
         
         self.retrieveHtml(searchBar.text)
