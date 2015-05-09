@@ -8,12 +8,12 @@
 
 import Foundation
 
-class FetcherBaseParser: FetchProtocal{
-    func getHost() -> String{
+class FetcherBaseParser: FetchProtocal {
+    func getHost() -> String {
         return ""
     }
-    
-    func fetchHtml(completeHandler: ObjectHandler){
+
+    func fetchHtml(completeHandler: ObjectHandler) {
         DownloadHtmlHelper.downlaodHtml(getHost()) {
             (object, error) -> Void in
             if (error == nil) {
@@ -24,23 +24,49 @@ class FetcherBaseParser: FetchProtocal{
             }
         }
     }
-    
-    func parseHtml(html:String){
-        
+
+    func parseHtml(html: String) {
+
     }
-    
+
     // MARK:
-    func getNodeText(element:GDataXMLElement,xpath:String) -> String{
+    func getNodeText(element: GDataXMLDocument, xpath: String) -> String {
         var text = ""
-        let titleResults:NSArray = element.nodesForXPath(xpath, error: nil)
-        println("length in getNodeText is \(titleResults.count)")
-        if(titleResults.count == 1){
+        let titleResults: NSArray = element.nodesForXPath(xpath, error: nil)
+//        println("length in getNodeText is \(titleResults.count)")
+
+//        for element in titleResults {
+//            let titleNode: GDataXMLNode = element as! GDataXMLNode
+//            println("titleNode is \(titleNode.XMLString())")
+//        }
+
+        if (titleResults.count == 1) {
             let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
-            text =  titleNode.XMLString()
-            
+            text = titleNode.XMLString()
+
 //            println("\(titleNode.XMLString())")
         }
-     
+
+        return text
+    }
+
+    func getNodeText123(element: GDataXMLElement, xpath: String) -> String {
+        var text = ""
+        let titleResults: NSArray = element.nodesForXPath(xpath, error: nil)
+        println("length in getNodeText is \(titleResults.count)")
+
+        for element in titleResults {
+            let titleNode: GDataXMLNode = element as! GDataXMLNode
+            println("titleNode is \(titleNode.XMLString())")
+        }
+
+        if (titleResults.count == 1) {
+            let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
+            text = titleNode.XMLString()
+
+//            println("\(titleNode.XMLString())")
+        }
+
         return text
     }
 }
