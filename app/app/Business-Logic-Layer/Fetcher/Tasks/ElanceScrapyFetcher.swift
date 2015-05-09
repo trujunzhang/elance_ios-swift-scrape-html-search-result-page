@@ -37,9 +37,7 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         for resultElement in searchResults {
             let divDoc: GDataXMLDocument =  makeNewDocumentFromSnipet(resultElement.XMLString())
             let data: HtmlResultData = self.parseResultElement(divDoc.rootElement())
-            if(data.title.isEmpty == false){
-                array.addObject(data)
-            }
+            array.addObject(data)
         }
         
         return array
