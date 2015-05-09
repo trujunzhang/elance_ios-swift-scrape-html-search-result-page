@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import Alamofire
 
 class SeearchViewController: UITableViewController,UISearchBarDelegate {
     

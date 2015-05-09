@@ -22,7 +22,7 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     ]
     
     override func getHost() -> String {
-        return "\(elance_host)\(searchWish)/"
+        return "\(elance_host)\(searchWish)"
     }
     
     override func fetchHtml(search:String,completeHandler: ObjectHandler) {

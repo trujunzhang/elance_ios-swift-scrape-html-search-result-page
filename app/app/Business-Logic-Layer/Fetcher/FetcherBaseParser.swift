@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class FetcherBaseParser: FetchProtocal {
     
@@ -24,22 +25,15 @@ class FetcherBaseParser: FetchProtocal {
     
     func fetchHtml(search:String,completeHandler: ObjectHandler) {
         self.searchWish = search.stringByReplacingOccurrencesOfString(" ", withString: "%20")
-
-        DownloadHtmlHelper.downlaodHtml(getHost()) {
-            (object, error) -> Void in
-            
-            if (error == nil) {
-                if(object == nil){
-                    completeHandler(nil,false)
-                }else{
-                    let html: String = object as! String
-                    let array:NSMutableArray = self.parseHtml(html)
+        
+        Alamofire.request(.GET, getHost())
+            .responseString { (_, _, string, _) in
+                if(string?.isEmpty == false){
+                    let array:NSMutableArray = self.parseHtml(string!)
                     completeHandler(array,true)
+                }else{
+                    completeHandler(nil,false)
                 }
-            } else {
-                completeHandler(nil,false)
-            }
-            
         }
     }
     
