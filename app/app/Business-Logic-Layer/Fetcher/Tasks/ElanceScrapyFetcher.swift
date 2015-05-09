@@ -23,8 +23,8 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         return "https://www.elance.com/r/jobs/q-scrapy/"
     }
     
-    override func fetchHtml(completeHandler: ObjectHandler) {
-        super.fetchHtml(completeHandler)
+    override func fetchHtml(search:String,completeHandler: ObjectHandler) {
+        super.fetchHtml(search,completeHandler: completeHandler)
     }
     
     override func parseHtml(html: String) -> NSMutableArray {

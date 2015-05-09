@@ -13,7 +13,7 @@ class FetcherBaseParser: FetchProtocal {
         return ""
     }
 
-    func fetchHtml(completeHandler: ObjectHandler) {
+    func fetchHtml(search:String,completeHandler: ObjectHandler) {
         DownloadHtmlHelper.downlaodHtml(getHost()) {
             (object, error) -> Void in
             if (error == nil) {

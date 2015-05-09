@@ -14,7 +14,7 @@ protocol FetchProtocal{
     
     func getHost() -> String
     
-    func fetchHtml(completeHandler: ObjectHandler)
+    func fetchHtml(search:String,completeHandler: ObjectHandler)
     
     func parseHtml(html:String) -> NSMutableArray
     
