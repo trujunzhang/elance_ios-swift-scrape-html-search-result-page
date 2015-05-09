@@ -12,6 +12,7 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     
     let elance_host = "https://www.elance.com/r/jobs/q-"
     
+    
     let model_xpath_dict = [
         "root": "//div[@id='jobSearchResults']//div[@data-pos]",
         "title": "//div/a[1]/text()",

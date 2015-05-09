@@ -13,8 +13,14 @@ class FetcherBaseParser: FetchProtocal {
     
     var searchWish = ""
     
+    // abstract method
     func getHost() -> String {
         return ""
+    }
+    // abstract method
+    func parseHtml(html: String) -> NSMutableArray{
+        
+        return  NSMutableArray()
     }
     
     func fetchHtml(search:String,completeHandler: ObjectHandler) {
@@ -38,12 +44,7 @@ class FetcherBaseParser: FetchProtocal {
         }
     }
     
-    func parseHtml(html: String) -> NSMutableArray{
-        
-        return  NSMutableArray()
-    }
-    
-    // MARK:
+    // MARK: common method
     func getNodeText(element: GDataXMLDocument, xpath: String) -> String {
         var text = ""
         let array: NSArray = element.nodesForXPath(xpath, error: nil)
