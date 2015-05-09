@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E12C7781AFCD2BD00188527 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12C7761AFCD2BD00188527 /* HTMLNode.swift */; };
-		5E12C7791AFCD2BD00188527 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12C7771AFCD2BD00188527 /* HTMLParser.swift */; };
 		5E12C77B1AFCD2E300188527 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E12C77A1AFCD2E300188527 /* libxml2.dylib */; };
-		5E12C77C1AFCD2F300188527 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12C7761AFCD2BD00188527 /* HTMLNode.swift */; };
-		5E12C77D1AFCD2F500188527 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12C7771AFCD2BD00188527 /* HTMLParser.swift */; };
 		5E6AF6331AFC985C00FDE994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF6321AFC985C00FDE994 /* AppDelegate.swift */; };
 		5E6AF6351AFC985C00FDE994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF6341AFC985C00FDE994 /* ViewController.swift */; };
 		5E6AF6381AFC985C00FDE994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF6361AFC985C00FDE994 /* Main.storyboard */; };
@@ -25,17 +21,12 @@
 		5E80F9461AFDAF4200C5C038 /* title.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9431AFDAF4200C5C038 /* title.html */; };
 		5E8DE0BD1AFCCB9300E2B590 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */; };
 		5E8DE0BE1AFCCB9900E2B590 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */; };
-		5E9074761AFCA13600C262B2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9074751AFCA13600C262B2 /* Nimble.framework */; };
 		5EA13CEE1AFDAABF00E7DEEC /* FetcherBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CED1AFDAABF00E7DEEC /* FetcherBaseParser.swift */; };
 		5EA13CFA1AFDAB1700E7DEEC /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CF51AFDAB1700E7DEEC /* RegExCategories.m */; };
 		5EA13CFB1AFDABA500E7DEEC /* FetcherBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CED1AFDAABF00E7DEEC /* FetcherBaseParser.swift */; };
 		5EA13CFC1AFDABAA00E7DEEC /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CF51AFDAB1700E7DEEC /* RegExCategories.m */; };
 		5EBB084F1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */; };
 		5EBB08511AFCAA5400EDD026 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC087B41AFCA90800B41FE9 /* Alamofire.framework */; };
-		5EBB08541AFCABD500EDD026 /* FetcherHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBB08531AFCABD500EDD026 /* FetcherHelper.swift */; };
-		5EC087B51AFCA90800B41FE9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC087B41AFCA90800B41FE9 /* Alamofire.framework */; };
-		5EC087C31AFCA92000B41FE9 /* ElanceHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BC1AFCA92000B41FE9 /* ElanceHtmlParser.swift */; };
-		5EC087C41AFCA92000B41FE9 /* KatPHHtmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BD1AFCA92000B41FE9 /* KatPHHtmlParser.swift */; };
 		5EC087C51AFCA92000B41FE9 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */; };
 		5EC2A5A41AFCBF9B0003B22D /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */; };
 		5EC2A5A61AFCC0400003B22D /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */; };
@@ -64,8 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5E12C7761AFCD2BD00188527 /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNode.swift; sourceTree = "<group>"; };
-		5E12C7771AFCD2BD00188527 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
 		5E12C77A1AFCD2E300188527 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		5E6AF62D1AFC985C00FDE994 /* appBDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appBDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6AF6311AFC985C00FDE994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,10 +77,7 @@
 		5EA13CF41AFDAB1700E7DEEC /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
 		5EA13CF51AFDAB1700E7DEEC /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		5EBB084E1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHScrapyFetcherTests.swift; sourceTree = "<group>"; };
-		5EBB08531AFCABD500EDD026 /* FetcherHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FetcherHelper.swift; path = Alamofire/FetcherHelper.swift; sourceTree = "<group>"; };
 		5EC087B41AFCA90800B41FE9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		5EC087BC1AFCA92000B41FE9 /* ElanceHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElanceHtmlParser.swift; sourceTree = "<group>"; };
-		5EC087BD1AFCA92000B41FE9 /* KatPHHtmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHHtmlParser.swift; sourceTree = "<group>"; };
 		5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlResultData.swift; sourceTree = "<group>"; };
 		5EC2A5A21AFCBF9B0003B22D /* DownloadHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DownloadHtmlHelper.h; path = Afnetworking/DownloadHtmlHelper.h; sourceTree = "<group>"; };
 		5EC2A5A31AFCBF9B0003B22D /* DownloadHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DownloadHtmlHelper.m; path = Afnetworking/DownloadHtmlHelper.m; sourceTree = "<group>"; };
@@ -126,8 +112,6 @@
 			files = (
 				5E12C77B1AFCD2E300188527 /* libxml2.dylib in Frameworks */,
 				A424F441FE544CCBD0329457 /* libPods-appBDDTests.a in Frameworks */,
-				5EC087B51AFCA90800B41FE9 /* Alamofire.framework in Frameworks */,
-				5E9074761AFCA13600C262B2 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,16 +139,6 @@
 				7AFA2CFAE84160848B655C0F /* Pods-appBDDTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		5E12C7751AFCD2BD00188527 /* Swift-HTML-Parser */ = {
-			isa = PBXGroup;
-			children = (
-				5E12C7761AFCD2BD00188527 /* HTMLNode.swift */,
-				5E12C7771AFCD2BD00188527 /* HTMLParser.swift */,
-			);
-			name = "Swift-HTML-Parser";
-			path = "../../../dependencies/Swift-HTML-Parser";
 			sourceTree = "<group>";
 		};
 		5E6AF6241AFC985C00FDE994 = {
@@ -286,24 +260,13 @@
 			path = ../../UnitTests/HtmlParserTests;
 			sourceTree = "<group>";
 		};
-		5EBB08521AFCAB9D00EDD026 /* Alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				5EBB08531AFCABD500EDD026 /* FetcherHelper.swift */,
-			);
-			name = Alamofire;
-			sourceTree = "<group>";
-		};
 		5EC087B61AFCA92000B41FE9 /* Business-Logic-Layer */ = {
 			isa = PBXGroup;
 			children = (
 				5EA13CEF1AFDAB1700E7DEEC /* Objective-C-RegEx-Categories */,
-				5E12C7751AFCD2BD00188527 /* Swift-HTML-Parser */,
 				5E8DE0BA1AFCCB9300E2B590 /* GDataXML-HTML */,
 				5EC2A5A11AFCBF540003B22D /* Afnetworking */,
-				5EBB08521AFCAB9D00EDD026 /* Alamofire */,
 				5EC087B71AFCA92000B41FE9 /* Fetcher */,
-				5EC087BB1AFCA92000B41FE9 /* HtmlParser */,
 				5EC087BE1AFCA92000B41FE9 /* Models */,
 			);
 			name = "Business-Logic-Layer";
@@ -319,15 +282,6 @@
 				5EC2A5A71AFCC1BA0003B22D /* FetcherConstant.swift */,
 			);
 			path = Fetcher;
-			sourceTree = "<group>";
-		};
-		5EC087BB1AFCA92000B41FE9 /* HtmlParser */ = {
-			isa = PBXGroup;
-			children = (
-				5EC087BC1AFCA92000B41FE9 /* ElanceHtmlParser.swift */,
-				5EC087BD1AFCA92000B41FE9 /* KatPHHtmlParser.swift */,
-			);
-			path = HtmlParser;
 			sourceTree = "<group>";
 		};
 		5EC087BE1AFCA92000B41FE9 /* Models */ = {
@@ -389,7 +343,6 @@
 				5E6AF63F1AFC985C00FDE994 /* Frameworks */,
 				5E6AF6401AFC985C00FDE994 /* Resources */,
 				B9AD6845569E523AFDF98624 /* Copy Pods Resources */,
-				5E059E581AFCA0CB0048F5E7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -462,21 +415,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5E059E581AFCA0CB0048F5E7 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		5EBB08501AFCA9FA00EDD026 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -563,18 +501,13 @@
 				5EC2A5B11AFCC35B0003B22D /* ElanceScrapyFetcher.swift in Sources */,
 				5EC2A5B31AFCC35B0003B22D /* KatPHScrapyFetcher.swift in Sources */,
 				5EC2A5B21AFCC35B0003B22D /* GoogleScrapyFetcher.swift in Sources */,
-				5EC087C31AFCA92000B41FE9 /* ElanceHtmlParser.swift in Sources */,
 				5E8DE0BD1AFCCB9300E2B590 /* GDataHtmlHelper.m in Sources */,
 				5EC2A5AB1AFCC2C60003B22D /* FetchProtocal.swift in Sources */,
 				5E6AF6351AFC985C00FDE994 /* ViewController.swift in Sources */,
 				5EC2A5A81AFCC1BA0003B22D /* FetcherConstant.swift in Sources */,
-				5E12C7791AFCD2BD00188527 /* HTMLParser.swift in Sources */,
-				5EC087C41AFCA92000B41FE9 /* KatPHHtmlParser.swift in Sources */,
 				5EA13CEE1AFDAABF00E7DEEC /* FetcherBaseParser.swift in Sources */,
 				5EC087C51AFCA92000B41FE9 /* HtmlResultData.swift in Sources */,
 				5E6AF6331AFC985C00FDE994 /* AppDelegate.swift in Sources */,
-				5E12C7781AFCD2BD00188527 /* HTMLNode.swift in Sources */,
-				5EBB08541AFCABD500EDD026 /* FetcherHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +515,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E12C77D1AFCD2F500188527 /* HTMLParser.swift in Sources */,
 				5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */,
 				5E8DE0BE1AFCCB9900E2B590 /* GDataHtmlHelper.m in Sources */,
 				5EC2A5A91AFCC23F0003B22D /* FetcherConstant.swift in Sources */,
@@ -595,7 +527,6 @@
 				5EC2A5A61AFCC0400003B22D /* DownloadHtmlHelper.m in Sources */,
 				5EBB084F1AFCA97D00EDD026 /* KatPHScrapyFetcherTests.swift in Sources */,
 				5E6F56F01AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift in Sources */,
-				5E12C77C1AFCD2F300188527 /* HTMLNode.swift in Sources */,
 				5EEC42521AFCC89600C2E44E /* ElanceScrapyFetcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

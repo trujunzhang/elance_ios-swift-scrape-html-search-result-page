@@ -1,0 +1,18 @@
+//div[@id="jobSearchResults"]//div[@class="jobCard"]
+
+//div[@id="jobSearchResults"]//div[@data-pos]
+
+.//*[@id='jobSearchResults']/div[1]//*[@class='desc collapsed descFull']/text()
+
+
+.//*[@id='jobSearchResults']/div[4]//*[@class='desc collapsed descFull']/text()
+
+.//*[@id='jobSearchResults']/div[4]//div[contains(@class,'desc') and contains(@class ,'collapsed')]/text()
+
+
+.//*[@id='jobSearchResults']/div[4]//div[contains(concat( " ", @class, " " ),concat( " ", "desc", " " )]/text()
+
+contains(concat( " ", @class, " " ),concat( " ", "desc", " " )
+
+
+normalize-space
