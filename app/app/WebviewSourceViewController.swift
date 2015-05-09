@@ -8,40 +8,25 @@
 
 import Foundation
 
-class WebviewSourceViewController: UIViewController,UIWebViewDelegate {
+class WebviewSourceViewController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     
-    var urlString = ""
+    var urlString: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
     }
-    override func viewDidDisappear(animated: Bool) {
-        super.viewDidDisappear(animated)
-
-        println("url is \(urlString)")
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        urlString =  urlString.replace("\"", withString: "").replace("href=", withString: "")
+        
         let request: NSURLRequest = NSURLRequest(URL: NSURL(string: urlString)!)
         
-        self.webView.delegate = self
         self.webView.loadRequest(request)
-    }
-    
-    func webViewDidFinishLoad(webView: UIWebView) {
-        
-    }
-    
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
-        // Report the error inside the web view.
-        let localizedErrorMessage = NSLocalizedString("An error occured:", comment: "")
-        
-        let errorHTML = "<!doctype html><html><body><div style=\"width: 100%%; text-align: center; font-size: 36pt;\">\(localizedErrorMessage) \(error.localizedDescription)</div></body></html>"
-        
-        webView.loadHTMLString(errorHTML, baseURL: nil)
-        
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
     
 }

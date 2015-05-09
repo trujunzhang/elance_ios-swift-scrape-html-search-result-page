@@ -37,9 +37,6 @@ class ElanceScrapyFetcher: FetcherBaseParser {
             array.addObject(data)
         }
         
-        //        self.parseResultElement(searchResults[1] as! GDataXMLElement) // test
-//        self.parseResultElement(searchResults[4] as! GDataXMLElement) // test
-        
         return array
     }
     
@@ -47,15 +44,15 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         // retrieve title
         var titleNode: GDataXMLNode = element.childAtIndex(1)
         var title = self.parseElement(titleNode.XMLString(), xpath: model_xpath_dict["title"]!)
-        println("\(title)")
+//        println("\(title)")
         // retrieve a href
         var hrefNode: GDataXMLNode = element.childAtIndex(1)
         var href = self.parseElement(hrefNode.XMLString(), xpath: model_xpath_dict["href"]!)
-        println("\(href)")
+//        println("\(href)")
         // retrieve description
         let contentNode: GDataXMLNode = element.childAtIndex(5)
         var content = self.parseElement(contentNode.XMLString(), xpath: model_xpath_dict["content"]!)
-        println("content is \(content)")
+//        println("content is \(content)")
         
         return HtmlResultData(title: title, link: href, content: content)
     }
