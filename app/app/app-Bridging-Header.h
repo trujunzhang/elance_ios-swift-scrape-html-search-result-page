@@ -15,3 +15,5 @@
 #import <libxml/xpath.h>
 
 #import "GDataXMLNode.h"
+
+ #import "RegExCategories.h"

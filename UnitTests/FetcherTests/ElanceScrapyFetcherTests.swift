@@ -27,7 +27,7 @@ class ElanceScrapyFetcherTests: XCTestCase {
         fetcher = nil
     }
     
-    func testElanceScrapyFetcher() {
+    func _testElanceScrapyFetcher() {
         // This is an example of a functional test case.
         let expectation = expectationWithDescription("ElanceScrapyFetcher")
         

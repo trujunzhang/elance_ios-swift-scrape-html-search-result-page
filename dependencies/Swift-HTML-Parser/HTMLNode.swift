@@ -158,7 +158,7 @@ public class HTMLNode {
     private func findChildClasss(className: String, node: HTMLNode?, inout retAry: [HTMLNode]) -> [HTMLNode] {
         if let n = node {
             for curNode in n {
-                if curNode.className.contains(className) {
+                if (curNode.className == className) {
                     retAry.append(curNode)
                 }
             }
