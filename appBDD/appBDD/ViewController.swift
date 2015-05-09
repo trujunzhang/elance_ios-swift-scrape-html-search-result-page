@@ -17,7 +17,6 @@ class ViewController: UIViewController {
         ElanceScrapyFetcher().fetchHtml("ios 8", completeHandler: { (object, sucess) -> Void in
             if((sucess) != nil){
             }else{
-
             }
         })
     }
