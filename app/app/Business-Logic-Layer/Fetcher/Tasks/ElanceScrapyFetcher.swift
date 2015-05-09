@@ -9,23 +9,10 @@
 import Foundation
 
 class ElanceScrapyFetcher: FetcherBaseParser {
-    let model_xpath_dictxxx = [
-            "root": "//div[@id='jobSearchResults']//div[@data-pos]",
-            "title": "div[1]/a[1]/text()",
-            //                "content":"//*[@class='desc']/text()"
-            //        "content":"div[3]/text()"
-            "content": "div[3]/text()"
-    ]
-
     let model_xpath_dict = [
             "root": "//div[@id='jobSearchResults']//div[@data-pos]",
             "title": "//div/a[1]/text()",
-            //            "content": "//div[contains(@class,'desc') and contains(@class ,'collapsed')]/text()",
-            //            "content": "//div/text()",
             "content": "//div/text()[not(parent::span)]"
-            //                                "content":"//div[contains(@class,'desc')]/text()"
-            //        "content":"div[3]/text()"
-            //        "content":"div[3]"
     ]
 
     override func getHost() -> String {
@@ -60,17 +47,14 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     }
 
     func parseElement(xmlString: String, xpath: String) -> String {
-        let html: String = xmlString
-
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
-        let xx = html.replace(rx, with: "")
-//        println("xx is \(xx)")
-        //        println("\(xmlString)")
+        let result = xmlString.replace(rx, with: "")
+        println("result is \(result)")
 
-        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: xx, error: nil)
-        var title = getNodeText(doc, xpath: xpath)
+        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: result, error: nil)
+        var nodeText = getNodeText(doc, xpath: xpath)
 
-        return title
+        return nodeText
     }
 
     func parseResultelement123(element: GDataXMLElement) {

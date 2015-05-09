@@ -32,16 +32,16 @@ class FetcherBaseParser: FetchProtocal {
     // MARK:
     func getNodeText(element: GDataXMLDocument, xpath: String) -> String {
         var text = ""
-        let titleResults: NSArray = element.nodesForXPath(xpath, error: nil)
-//        println("length in getNodeText is \(titleResults.count)")
+        let array: NSArray = element.nodesForXPath(xpath, error: nil)
+        println("length in getNodeText is \(array.count)")
 
-//        for element in titleResults {
+//        for element in array {
 //            let titleNode: GDataXMLNode = element as! GDataXMLNode
 //            println("titleNode is \(titleNode.XMLString())")
 //        }
 
-        if (titleResults.count == 1) {
-            let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
+        if (array.count == 1) {
+            let titleNode: GDataXMLNode = array[0] as! GDataXMLNode
             text = titleNode.XMLString()
 
 //            println("\(titleNode.XMLString())")

@@ -31,7 +31,7 @@ class HtmlRegexReplaceTests: XCTestCase {
         return data!
     }
 
-    func testExample() {
+    func testParseContent() {
         let html = readFile("content")
 //        println("\(html)")
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
