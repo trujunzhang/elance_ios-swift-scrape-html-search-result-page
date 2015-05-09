@@ -28,4 +28,19 @@ class FetcherBaseParser: FetchProtocal{
     func parseHtml(html:String){
         
     }
+    
+    // MARK:
+    func getNodeText(element:GDataXMLElement,xpath:String) -> String{
+        var text = ""
+        let titleResults:NSArray = element.nodesForXPath(xpath, error: nil)
+        println("length in getNodeText is \(titleResults.count)")
+        if(titleResults.count == 1){
+            let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
+            text =  titleNode.XMLString()
+            
+//            println("\(titleNode.XMLString())")
+        }
+     
+        return text
+    }
 }
