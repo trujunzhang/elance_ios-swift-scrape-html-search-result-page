@@ -18,6 +18,7 @@
 		5E6AF63A1AFC985C00FDE994 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF6391AFC985C00FDE994 /* Images.xcassets */; };
 		5E6AF63D1AFC985C00FDE994 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E6AF63B1AFC985C00FDE994 /* LaunchScreen.xib */; };
 		5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6AF6481AFC985C00FDE994 /* appBDDTests.swift */; };
+		5E6B91281AFDB5CB00B317AD /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC087BF1AFCA92000B41FE9 /* HtmlResultData.swift */; };
 		5E6F56F01AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F56EF1AFDAC0100C7EE8E /* HtmlRegexReplaceTests.swift */; };
 		5E80F9441AFDAF4200C5C038 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9411AFDAF4200C5C038 /* content.html */; };
 		5E80F9451AFDAF4200C5C038 /* searchElement.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9421AFDAF4200C5C038 /* searchElement.html */; };
@@ -586,6 +587,7 @@
 				5E8DE0BE1AFCCB9900E2B590 /* GDataHtmlHelper.m in Sources */,
 				5EC2A5A91AFCC23F0003B22D /* FetcherConstant.swift in Sources */,
 				5EC2A5B51AFCC36F0003B22D /* GoogleScrapyFetcher.swift in Sources */,
+				5E6B91281AFDB5CB00B317AD /* HtmlResultData.swift in Sources */,
 				5EC2A5AC1AFCC2CF0003B22D /* FetchProtocal.swift in Sources */,
 				5EC2A5B41AFCC36B0003B22D /* ElanceScrapyFetcher.swift in Sources */,
 				5EA13CFB1AFDABA500E7DEEC /* FetcherBaseParser.swift in Sources */,

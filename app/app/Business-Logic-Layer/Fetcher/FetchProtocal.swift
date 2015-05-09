@@ -16,6 +16,6 @@ protocol FetchProtocal{
     
     func fetchHtml(completeHandler: ObjectHandler)
     
-    func parseHtml(html:String)
+    func parseHtml(html:String) -> NSMutableArray
     
 }

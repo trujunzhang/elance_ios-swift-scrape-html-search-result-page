@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HtmlResultData {
+class HtmlResultData: NSObject {
     var title = ""
     var link = ""
     var content = ""

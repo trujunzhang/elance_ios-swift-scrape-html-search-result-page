@@ -10,74 +10,85 @@ import Foundation
 
 class ElanceScrapyFetcher: FetcherBaseParser {
     let model_xpath_dict = [
-            "root": "//div[@id='jobSearchResults']//div[@data-pos]",
-            "title": "//div/a[1]/text()",
-            "content": "//div/text()[not(parent::span)]"
+        "root": "//div[@id='jobSearchResults']//div[@data-pos]",
+        "title": "//div/a[1]/text()",
+        "href": "//div/a[1]/@href",
+        "content": "//div/text()[not(parent::span)]"
     ]
-
+    
     override func getHost() -> String {
         return "https://www.elance.com/r/jobs/q-scrapy/"
     }
-
+    
     override func fetchHtml(completeHandler: ObjectHandler) {
         super.fetchHtml(completeHandler)
     }
-
-    override func parseHtml(html: String) {
+    
+    override func parseHtml(html: String) -> NSMutableArray {
+        var array: NSMutableArray = NSMutableArray()
         let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: html, error: nil)
         let searchResults: NSArray = doc.nodesForXPath(model_xpath_dict["root"], error: nil)
-
+        
         for resultElement in searchResults {
-            //            self.parseResultElement(resultElement as! GDataXMLElement) // used
+            let data: HtmlResultData = self.parseResultElement(resultElement as! GDataXMLElement) // used
+            array.addObject(data)
         }
-
+        
         //        self.parseResultElement(searchResults[1] as! GDataXMLElement) // test
         self.parseResultElement(searchResults[4] as! GDataXMLElement) // test
+        
+        return array
     }
-
-    func parseResultElement(element: GDataXMLElement) {
+    
+    func parseResultElement(element: GDataXMLElement) -> HtmlResultData {
         // retrieve title
-        //        var node: GDataXMLNode = element.childAtIndex(1)
-        //        var title = self.parseElement(node.XMLString(), xpath: model_xpath_dict["title"]!)
-        //        println("\(title)")
+        var titleNode: GDataXMLNode = element.childAtIndex(1)
+        var title = self.parseElement(titleNode.XMLString(), xpath: model_xpath_dict["title"]!)
+        println("\(title)")
+        // retrieve a href
+        var hrefNode: GDataXMLNode = element.childAtIndex(1)
+        var href = self.parseElement(hrefNode.XMLString(), xpath: model_xpath_dict["href"]!)
+        println("\(href)")
         // retrieve description
         let contentNode: GDataXMLNode = element.childAtIndex(5)
         var content = self.parseElement(contentNode.XMLString(), xpath: model_xpath_dict["content"]!)
         println("content is \(content)")
+        
+        return HtmlResultData(title: title, link: href, content: content)
     }
-
+    
     func parseElement(xmlString: String, xpath: String) -> String {
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
         let result = xmlString.replace(rx, with: "")
         println("result is \(result)")
-
+        
         let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: result, error: nil)
         var nodeText = getNodeText(doc, xpath: xpath)
-
+        
         return nodeText
     }
-
+    
     func parseResultelement123(element: GDataXMLElement) {
         println("element is \(element)")
         //        let title_xpath = "div[1]/a[1]/text()"
-
+        
         //        var title = getNodeText(element,xpath:model_xpath_dict["title"]!)
         var link = ""
         //        var content = getNodeText(element, xpath: model_xpath_dict["content"]!)
-
+        
         //        println("\(title)")
         //        println("xxxxx")
         //        println("content is \(content)")
-
+        
         //        let titleResults:NSArray = element.nodesForXPath(title_xpath, error: nil)
         //        if(titleResults.count == 1){
         //            let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
         //            title =  titleNode.XMLString()
         //            println("\(titleNode.XMLString())")
         //        }
-
-
+        
+        
     }
-
-
+    
+    
 }

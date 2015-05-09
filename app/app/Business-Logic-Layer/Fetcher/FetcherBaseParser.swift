@@ -18,15 +18,17 @@ class FetcherBaseParser: FetchProtocal {
             (object, error) -> Void in
             if (error == nil) {
                 let html: String = object as! String
-                self.parseHtml(html)
+                let array:NSMutableArray = self.parseHtml(html)
+                completeHandler(array,true)
             } else {
-                let x = 0
+               completeHandler(nil,false)
             }
         }
     }
 
-    func parseHtml(html: String) {
+    func parseHtml(html: String) -> NSMutableArray{
 
+        return  NSMutableArray()
     }
 
     // MARK:

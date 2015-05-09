@@ -36,11 +36,8 @@ class HtmlRegexReplaceTests: XCTestCase {
 //        println("\(html)")
 
         let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: html, error: nil)
-        let titleResults: NSArray = doc.nodesForXPath("//div[@id='jobSearchResults']//div[@data-pos]", error: nil)
+        let titleNode: GDataXMLNode = doc.firstNodeForXPath("//div/a[1]/@href", error: nil)
 
-        println("length in getNodeText is \(titleResults.count)")
-
-        let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
         let text = titleNode.XMLString()
 
         println("\(titleNode.XMLString())")
