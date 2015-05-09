@@ -21,7 +21,6 @@
 		5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */; };
 		5EACB92D1AFCC3CF0031F249 /* KatPHScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9211AFCC3CF0031F249 /* KatPHScrapyFetcher.swift */; };
 		5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */; };
-		5EB3DDB11AFD74E9000E5480 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3DDB01AFD74E9000E5480 /* GDataHtmlHelper.m */; };
 		5EB3DDB31AFD7A13000E5480 /* FetcherBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3DDB21AFD7A13000E5480 /* FetcherBaseParser.swift */; };
 		5ED709561AFCE6590012E06B /* WebviewSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED709551AFCE6590012E06B /* WebviewSourceViewController.swift */; };
 		5EF5F5EA1AFCD107006D253F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF5F5E91AFCD107006D253F /* libxml2.dylib */; };
@@ -53,8 +52,6 @@
 		5EACB9211AFCC3CF0031F249 /* KatPHScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KatPHScrapyFetcher.swift; sourceTree = "<group>"; };
 		5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlResultData.swift; sourceTree = "<group>"; };
 		5EACB9311AFCC3F60031F249 /* app-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "app-Bridging-Header.h"; sourceTree = "<group>"; };
-		5EB3DDAF1AFD74E9000E5480 /* GDataHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataHtmlHelper.h; sourceTree = "<group>"; };
-		5EB3DDB01AFD74E9000E5480 /* GDataHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataHtmlHelper.m; sourceTree = "<group>"; };
 		5EB3DDB21AFD7A13000E5480 /* FetcherBaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherBaseParser.swift; sourceTree = "<group>"; };
 		5ED709551AFCE6590012E06B /* WebviewSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewSourceViewController.swift; sourceTree = "<group>"; };
 		5EF5F5E91AFCD107006D253F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -168,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				5E69516F1AFDA3B500E23792 /* Objective-C-RegEx-Categories */,
-				5EB3DDAE1AFD74E9000E5480 /* GDataXML-HTML */,
 				5E80C81F1AFCEB0C004B47D3 /* Utils */,
 				5EACB9161AFCC3CF0031F249 /* Afnetworking */,
 				5EACB91B1AFCC3CF0031F249 /* Fetcher */,
@@ -213,15 +209,6 @@
 				5EACB9261AFCC3CF0031F249 /* HtmlResultData.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		5EB3DDAE1AFD74E9000E5480 /* GDataXML-HTML */ = {
-			isa = PBXGroup;
-			children = (
-				5EB3DDAF1AFD74E9000E5480 /* GDataHtmlHelper.h */,
-				5EB3DDB01AFD74E9000E5480 /* GDataHtmlHelper.m */,
-			);
-			path = "GDataXML-HTML";
 			sourceTree = "<group>";
 		};
 		AA1DBA0FD86D8D1351AAE7AD /* Pods */ = {
@@ -350,7 +337,6 @@
 				5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */,
 				5EFD7BFC1AFDC74700ADE440 /* SearchTableViewCell.swift in Sources */,
 				5EB3DDB31AFD7A13000E5480 /* FetcherBaseParser.swift in Sources */,
-				5EB3DDB11AFD74E9000E5480 /* GDataHtmlHelper.m in Sources */,
 				5EACB92A1AFCC3CF0031F249 /* FetchProtocal.swift in Sources */,
 				5ED709561AFCE6590012E06B /* WebviewSourceViewController.swift in Sources */,
 				5E80C8211AFCEB35004B47D3 /* StringExtensions.swift in Sources */,

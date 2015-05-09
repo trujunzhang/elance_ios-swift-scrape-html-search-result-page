@@ -20,8 +20,6 @@
 		5E80F9441AFDAF4200C5C038 /* content.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9411AFDAF4200C5C038 /* content.html */; };
 		5E80F9451AFDAF4200C5C038 /* searchElement.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9421AFDAF4200C5C038 /* searchElement.html */; };
 		5E80F9461AFDAF4200C5C038 /* title.html in Resources */ = {isa = PBXBuildFile; fileRef = 5E80F9431AFDAF4200C5C038 /* title.html */; };
-		5E8DE0BD1AFCCB9300E2B590 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */; };
-		5E8DE0BE1AFCCB9900E2B590 /* GDataHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */; };
 		5EA13CEE1AFDAABF00E7DEEC /* FetcherBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CED1AFDAABF00E7DEEC /* FetcherBaseParser.swift */; };
 		5EA13CFA1AFDAB1700E7DEEC /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CF51AFDAB1700E7DEEC /* RegExCategories.m */; };
 		5EA13CFB1AFDABA500E7DEEC /* FetcherBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA13CED1AFDAABF00E7DEEC /* FetcherBaseParser.swift */; };
@@ -71,8 +69,6 @@
 		5E80F9411AFDAF4200C5C038 /* content.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = content.html; sourceTree = "<group>"; };
 		5E80F9421AFDAF4200C5C038 /* searchElement.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = searchElement.html; sourceTree = "<group>"; };
 		5E80F9431AFDAF4200C5C038 /* title.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = title.html; sourceTree = "<group>"; };
-		5E8DE0BB1AFCCB9300E2B590 /* GDataHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataHtmlHelper.h; sourceTree = "<group>"; };
-		5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataHtmlHelper.m; sourceTree = "<group>"; };
 		5E9074751AFCA13600C262B2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		5EA13CED1AFDAABF00E7DEEC /* FetcherBaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherBaseParser.swift; sourceTree = "<group>"; };
 		5EA13CF41AFDAB1700E7DEEC /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
@@ -225,15 +221,6 @@
 			path = ../../UnitTests/xpath;
 			sourceTree = "<group>";
 		};
-		5E8DE0BA1AFCCB9300E2B590 /* GDataXML-HTML */ = {
-			isa = PBXGroup;
-			children = (
-				5E8DE0BB1AFCCB9300E2B590 /* GDataHtmlHelper.h */,
-				5E8DE0BC1AFCCB9300E2B590 /* GDataHtmlHelper.m */,
-			);
-			path = "GDataXML-HTML";
-			sourceTree = "<group>";
-		};
 		5EA13CEF1AFDAB1700E7DEEC /* Objective-C-RegEx-Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				5EA13CEF1AFDAB1700E7DEEC /* Objective-C-RegEx-Categories */,
-				5E8DE0BA1AFCCB9300E2B590 /* GDataXML-HTML */,
 				5EC2A5A11AFCBF540003B22D /* Afnetworking */,
 				5EC087B71AFCA92000B41FE9 /* Fetcher */,
 				5EC087BE1AFCA92000B41FE9 /* Models */,
@@ -488,7 +474,6 @@
 				5EC2A5B11AFCC35B0003B22D /* ElanceScrapyFetcher.swift in Sources */,
 				5EC2A5B31AFCC35B0003B22D /* KatPHScrapyFetcher.swift in Sources */,
 				5EC2A5B21AFCC35B0003B22D /* GoogleScrapyFetcher.swift in Sources */,
-				5E8DE0BD1AFCCB9300E2B590 /* GDataHtmlHelper.m in Sources */,
 				5EC2A5AB1AFCC2C60003B22D /* FetchProtocal.swift in Sources */,
 				5E6AF6351AFC985C00FDE994 /* ViewController.swift in Sources */,
 				5EC2A5A81AFCC1BA0003B22D /* FetcherConstant.swift in Sources */,
@@ -503,7 +488,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6AF6491AFC985C00FDE994 /* appBDDTests.swift in Sources */,
-				5E8DE0BE1AFCCB9900E2B590 /* GDataHtmlHelper.m in Sources */,
 				5EC2A5A91AFCC23F0003B22D /* FetcherConstant.swift in Sources */,
 				5EC2A5B51AFCC36F0003B22D /* GoogleScrapyFetcher.swift in Sources */,
 				5E6B91281AFDB5CB00B317AD /* HtmlResultData.swift in Sources */,
