@@ -15,7 +15,6 @@
 		5E6951721AFDA3C100E23792 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6951711AFDA3C100E23792 /* RegExCategories.m */; };
 		5E80C8211AFCEB35004B47D3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E80C8201AFCEB35004B47D3 /* StringExtensions.swift */; };
 		5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */; };
-		5EACB9291AFCC3CF0031F249 /* FetcherConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91C1AFCC3CF0031F249 /* FetcherConstant.swift */; };
 		5EACB92A1AFCC3CF0031F249 /* FetchProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */; };
 		5EACB92B1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB91F1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift */; };
 		5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */; };
@@ -45,7 +44,6 @@
 		5E86DE481AFCA8E10051490B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5EACB9171AFCC3CF0031F249 /* DownloadHtmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadHtmlHelper.h; sourceTree = "<group>"; };
 		5EACB9181AFCC3CF0031F249 /* DownloadHtmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadHtmlHelper.m; sourceTree = "<group>"; };
-		5EACB91C1AFCC3CF0031F249 /* FetcherConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherConstant.swift; sourceTree = "<group>"; };
 		5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchProtocal.swift; sourceTree = "<group>"; };
 		5EACB91F1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElanceScrapyFetcher.swift; sourceTree = "<group>"; };
 		5EACB9201AFCC3CF0031F249 /* GoogleScrapyFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleScrapyFetcher.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				5EB3DDB21AFD7A13000E5480 /* FetcherBaseParser.swift */,
-				5EACB91C1AFCC3CF0031F249 /* FetcherConstant.swift */,
 				5EACB91D1AFCC3CF0031F249 /* FetchProtocal.swift */,
 				5EACB91E1AFCC3CF0031F249 /* Tasks */,
 			);
@@ -328,7 +325,6 @@
 			files = (
 				5E3410551AFC980D00F19931 /* SeearchViewController.swift in Sources */,
 				5EACB92B1AFCC3CF0031F249 /* ElanceScrapyFetcher.swift in Sources */,
-				5EACB9291AFCC3CF0031F249 /* FetcherConstant.swift in Sources */,
 				5EACB9271AFCC3CF0031F249 /* DownloadHtmlHelper.m in Sources */,
 				5EACB92C1AFCC3CF0031F249 /* GoogleScrapyFetcher.swift in Sources */,
 				5E6951721AFDA3C100E23792 /* RegExCategories.m in Sources */,

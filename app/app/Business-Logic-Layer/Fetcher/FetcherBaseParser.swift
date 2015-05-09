@@ -46,6 +46,7 @@ class FetcherBaseParser: FetchProtocal {
     // MARK: common method
     func makeNewDocumentFromSnipet(htmlSnippet: String) -> GDataXMLDocument{
         let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: htmlSnippet, error: nil)
+        
         return doc
     }
 }
