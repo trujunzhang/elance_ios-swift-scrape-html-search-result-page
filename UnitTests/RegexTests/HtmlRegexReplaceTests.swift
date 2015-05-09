@@ -23,7 +23,7 @@ class HtmlRegexReplaceTests: XCTestCase {
         super.tearDown()
     }
 
-     func readFile(fileName: String) -> String {
+    func readFile(fileName: String) -> String {
         let path = NSBundle.mainBundle().pathForResource(fileName, ofType: "html")
 //         println("\(path)")
         var data = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)
@@ -33,9 +33,10 @@ class HtmlRegexReplaceTests: XCTestCase {
 
     func testExample() {
         let html = readFile("content")
-        println("\(html)")
+//        println("\(html)")
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
-//        let  xx =  html.replace(rx, with: html )
+        let result = html.replace(rx, with: "")
+        println("\(result)")
     }
 
 
