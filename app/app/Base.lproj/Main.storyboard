@@ -29,7 +29,7 @@
                                                 <constraint firstAttribute="height" constant="16" id="1Sz-Y7-9P6"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8q-bD-lEK">
@@ -61,6 +61,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="GKm-wa-oCJ"/>
+                    <connections>
+                        <outlet property="searchBar" destination="vDQ-c2-5gs" id="Bgr-yp-Hkx"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C26-RK-YAj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

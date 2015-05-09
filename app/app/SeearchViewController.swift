@@ -9,14 +9,18 @@
 import UIKit
 import Foundation
 
-class SeearchViewController: UITableViewController{
+class SeearchViewController: UITableViewController,UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     
     var searchArray:NSMutableArray = NSMutableArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        // Do any additional setup after loading the view, typically from a nib.
+        searchBar.delegate = self
         ElanceScrapyFetcher().fetchHtml { (object, sucess) -> Void in
             if((sucess) != nil){
                 self.refreshTableView(object as! NSMutableArray)
@@ -68,6 +72,34 @@ class SeearchViewController: UITableViewController{
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
     }
+    
+    
+    func filterContentForSearchText(searchText: String, scope: String = "All") {
+
+    }
+    
+    
+    // MARK: UISearchBarDelegate
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+       
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+           self.searchBar.resignFirstResponder()
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+           self.searchBar.resignFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+              self.searchBar.resignFirstResponder()
+        
+    }
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+    }
+
     
     
 }

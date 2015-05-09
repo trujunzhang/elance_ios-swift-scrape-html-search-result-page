@@ -111,12 +111,12 @@
 				5EACB9151AFCC3CF0031F249 /* Business-Logic-Layer */,
 				5E3410521AFC980D00F19931 /* AppDelegate.swift */,
 				5E3410541AFC980D00F19931 /* SeearchViewController.swift */,
+				5EFD7BFB1AFDC74700ADE440 /* SearchTableViewCell.swift */,
 				5ED709551AFCE6590012E06B /* WebviewSourceViewController.swift */,
 				5E3410561AFC980D00F19931 /* Main.storyboard */,
 				5E3410591AFC980D00F19931 /* Images.xcassets */,
 				5E34105B1AFC980D00F19931 /* LaunchScreen.xib */,
 				5E3410501AFC980D00F19931 /* Supporting Files */,
-				5EFD7BFB1AFDC74700ADE440 /* SearchTableViewCell.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
