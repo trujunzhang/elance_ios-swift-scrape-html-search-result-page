@@ -36,7 +36,18 @@ class HtmlRegexReplaceTests: XCTestCase {
 //        println("\(html)")
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
         let result = html.replace(rx, with: "")
-        println("\(result)")
+//        println("\(result)")
+
+        let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: result, error: nil)
+        let titleResults: NSArray = doc.nodesForXPath("//div/text()[not(parent::span)]", error: nil)
+
+        println("length in getNodeText is \(titleResults.count)")
+
+        let titleNode: GDataXMLNode = titleResults[0] as! GDataXMLNode
+        let text = titleNode.XMLString()
+
+        println("\(titleNode.XMLString())")
+
     }
 
 
