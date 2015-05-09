@@ -31,10 +31,14 @@ class ElanceScrapyFetcherTests: XCTestCase {
         // This is an example of a functional test case.
         let expectation = expectationWithDescription("ElanceScrapyFetcher")
         
-        fetcher?.fetchHtml({ (object, sucess) -> Void in
-            expectation.fulfill()
-        })
         
+        ElanceScrapyFetcher().fetchHtml("scrapy", completeHandler: { (object, sucess) -> Void in
+            if((sucess) != nil){
+                let array:NSMutableArray = object as! NSMutableArray
+            }else{
+
+            }
+        })
         
         waitForExpectationsWithTimeout(100) { (error) in
             XCTAssertNil(error, "\(error)")

@@ -31,7 +31,7 @@ class HtmlRegexReplaceTests: XCTestCase {
         return data!
     }
 
-    func testParseTitle() {
+    func _testParseTitle() {
         let html = readFile("title")
 //        println("\(html)")
 
@@ -43,8 +43,8 @@ class HtmlRegexReplaceTests: XCTestCase {
         println("\(titleNode.XMLString())")
     }
 
-    func _testParseContent() {
-        let html = readFile("content")
+    func testParseContent() {
+        let html = readFile("spanContent")
 //        println("\(html)")
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
         let result = html.replace(rx, with: "")
