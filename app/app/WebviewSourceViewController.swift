@@ -17,9 +17,13 @@ class WebviewSourceViewController: UIViewController,UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url:NSURL = NSURL(string: urlString)!
-        
-        let request: NSURLRequest = NSURLRequest(URL: url)
+
+    }
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        println("url is \(urlString)")
+        let request: NSURLRequest = NSURLRequest(URL: NSURL(string: urlString)!)
         
         self.webView.delegate = self
         self.webView.loadRequest(request)

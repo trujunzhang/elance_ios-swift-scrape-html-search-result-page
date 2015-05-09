@@ -79,6 +79,11 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
          let data: HtmlResultData = self.searchArray[indexPath.row] as! HtmlResultData
         
+        let viewController: WebviewSourceViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("WebviewSourceViewController") as! WebviewSourceViewController
+        
+        viewController.title = data.title
+        viewController.urlString = data.link
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
     
