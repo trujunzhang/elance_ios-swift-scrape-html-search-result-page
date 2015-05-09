@@ -12,12 +12,11 @@ class WebviewSourceViewController: UIViewController,UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
     
+    var urlString = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        let urlString = "\(elance_host)scrapy"
         let url:NSURL = NSURL(string: urlString)!
         
         let request: NSURLRequest = NSURLRequest(URL: url)
@@ -27,14 +26,6 @@ class WebviewSourceViewController: UIViewController,UIWebViewDelegate {
     }
     
     func webViewDidFinishLoad(webView: UIWebView) {
-        let x = 0
-        //        if let request:NSURLRequest = webView.request{
-        //            let  requestValue:NSData = request.HTTPBody!
-        //            let xxx:NSString = NSString(data: requestValue, encoding: NSASCIIStringEncoding)!
-        //          let  htmlSource = xxx as String
-        //
-        //            println("htmlSource is \(htmlSource)")
-        //        }
         
     }
     

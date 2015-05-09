@@ -25,6 +25,7 @@
 		5EB3DDB31AFD7A13000E5480 /* FetcherBaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3DDB21AFD7A13000E5480 /* FetcherBaseParser.swift */; };
 		5ED709561AFCE6590012E06B /* WebviewSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED709551AFCE6590012E06B /* WebviewSourceViewController.swift */; };
 		5EF5F5EA1AFCD107006D253F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF5F5E91AFCD107006D253F /* libxml2.dylib */; };
+		5EFD7BFC1AFDC74700ADE440 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD7BFB1AFDC74700ADE440 /* SearchTableViewCell.swift */; };
 		B223B903054BE7BA53859C50 /* libPods-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E847E66BE5E0D02EC5A303 /* libPods-app.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		5EB3DDB21AFD7A13000E5480 /* FetcherBaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherBaseParser.swift; sourceTree = "<group>"; };
 		5ED709551AFCE6590012E06B /* WebviewSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebviewSourceViewController.swift; sourceTree = "<group>"; };
 		5EF5F5E91AFCD107006D253F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		5EFD7BFB1AFDC74700ADE440 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		63E847E66BE5E0D02EC5A303 /* libPods-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA75DB8FA4D52F2FAF88ED /* Pods-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-app/Pods-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				5E3410591AFC980D00F19931 /* Images.xcassets */,
 				5E34105B1AFC980D00F19931 /* LaunchScreen.xib */,
 				5E3410501AFC980D00F19931 /* Supporting Files */,
+				5EFD7BFB1AFDC74700ADE440 /* SearchTableViewCell.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				5EACB9301AFCC3CF0031F249 /* HtmlResultData.swift in Sources */,
 				5EACB92D1AFCC3CF0031F249 /* KatPHScrapyFetcher.swift in Sources */,
 				5E3410531AFC980D00F19931 /* AppDelegate.swift in Sources */,
+				5EFD7BFC1AFDC74700ADE440 /* SearchTableViewCell.swift in Sources */,
 				5EB3DDB31AFD7A13000E5480 /* FetcherBaseParser.swift in Sources */,
 				5EB3DDB11AFD74E9000E5480 /* GDataHtmlHelper.m in Sources */,
 				5EACB92A1AFCC3CF0031F249 /* FetchProtocal.swift in Sources */,

@@ -9,6 +9,9 @@
 import Foundation
 
 class ElanceScrapyFetcher: FetcherBaseParser {
+    
+    let elance_host = "https://www.elance.com/r/jobs/q-"
+    
     let model_xpath_dict = [
         "root": "//div[@id='jobSearchResults']//div[@data-pos]",
         "title": "//div/a[1]/text()",
@@ -35,7 +38,7 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         }
         
         //        self.parseResultElement(searchResults[1] as! GDataXMLElement) // test
-        self.parseResultElement(searchResults[4] as! GDataXMLElement) // test
+//        self.parseResultElement(searchResults[4] as! GDataXMLElement) // test
         
         return array
     }
@@ -60,7 +63,6 @@ class ElanceScrapyFetcher: FetcherBaseParser {
     func parseElement(xmlString: String, xpath: String) -> String {
         var rx = NSRegularExpression.rx("<span.*span>", options: .CaseInsensitive);
         let result = xmlString.replace(rx, with: "")
-        println("result is \(result)")
         
         let doc: GDataXMLDocument = GDataXMLDocument(HTMLString: result, error: nil)
         var nodeText = getNodeText(doc, xpath: xpath)

@@ -10,4 +10,5 @@ import Foundation
 
 class GoogleScrapyFetcher: NSObject {
     
+    // no time to implement it
 }

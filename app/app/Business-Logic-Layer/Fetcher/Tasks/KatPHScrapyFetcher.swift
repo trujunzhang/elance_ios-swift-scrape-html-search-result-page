@@ -9,6 +9,7 @@
 import Foundation
 
 class KatPHScrapyFetcher: NSObject {
+      let kickass_host = "http://kickass.to/usearch/scrapy/"
     
-       
+       // no time to implement it
 }
