@@ -77,6 +77,7 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
     //MARK: UITableViewDelegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+         let data: HtmlResultData = self.searchArray[indexPath.row] as! HtmlResultData
         
     }
 
