@@ -18,9 +18,11 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         "href": "//div/a[1]/@href",
         "content": "//div/text()[not(parent::span)]"
     ]
-    
+
     override func getHost() -> String {
-        return "https://www.elance.com/r/jobs/q-scrapy/"
+//        let host = "https://www.elance.com/r/jobs/q-\(searchWish)/"
+//        return "https://www.elance.com/r/jobs/q-scrapy/"
+        return "https://www.elance.com/r/jobs/q-\(searchWish)/"
     }
     
     override func fetchHtml(search:String,completeHandler: ObjectHandler) {

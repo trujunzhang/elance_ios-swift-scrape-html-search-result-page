@@ -28,6 +28,8 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
     }
     
     func retrieveHtml(search:String){
+        self.emptyTableView()
+        
         ElanceScrapyFetcher().fetchHtml(search, completeHandler: { (object, sucess) -> Void in
             if((sucess) != nil){
                 self.refreshTableView(object as! NSMutableArray)
@@ -83,6 +85,7 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
         
         viewController.title = data.title
         viewController.urlString = data.link
+        
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 

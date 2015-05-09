@@ -9,11 +9,17 @@
 import Foundation
 
 class FetcherBaseParser: FetchProtocal {
+    
+    
+    var searchWish = ""
+    
     func getHost() -> String {
         return ""
     }
 
     func fetchHtml(search:String,completeHandler: ObjectHandler) {
+        self.searchWish = search
+        
         DownloadHtmlHelper.downlaodHtml(getHost()) {
             (object, error) -> Void in
             if (error == nil) {
