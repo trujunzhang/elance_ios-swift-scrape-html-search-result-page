@@ -47,9 +47,11 @@ class ElanceScrapyFetcher: FetcherBaseParser {
         // get title
         var titleNode: GDataXMLNode = element.firstNodeForXPath(model_xpath_dict["title"]!, error: nil)
         var title = titleNode.XMLString()
+        
         // get a href
         var hrefNode: GDataXMLNode = element.firstNodeForXPath(model_xpath_dict["href"]!, error: nil)
         var href = hrefNode.XMLString()
+        
         // get description
         var content = parseSpecialContentNode(element)
         

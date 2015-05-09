@@ -19,13 +19,12 @@ class FetcherBaseParser: FetchProtocal {
     }
     // abstract method
     func parseHtml(html: String) -> NSMutableArray{
-        
         return  NSMutableArray()
     }
     
     func fetchHtml(search:String,completeHandler: ObjectHandler) {
-        self.searchWish = search
-        
+        self.searchWish = search.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+
         DownloadHtmlHelper.downlaodHtml(getHost()) {
             (object, error) -> Void in
             

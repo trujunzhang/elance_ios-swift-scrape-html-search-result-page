@@ -31,7 +31,11 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
         
         ElanceScrapyFetcher().fetchHtml(search, completeHandler: { (object, sucess) -> Void in
             if((sucess) != nil){
-                self.refreshTableView(object as! NSMutableArray)
+                if(object == nil){
+                    self.title = "Search Failure!"
+                }else{
+                    self.refreshTableView(object as! NSMutableArray)
+                }
             }else{
                 self.title = "Search Failure!"
             }
@@ -78,7 +82,7 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
     //MARK: UITableViewDelegate
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-         let data: HtmlResultData = self.searchArray[indexPath.row] as! HtmlResultData
+        let data: HtmlResultData = self.searchArray[indexPath.row] as! HtmlResultData
         
         let viewController: WebviewSourceViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("WebviewSourceViewController") as! WebviewSourceViewController
         
@@ -87,7 +91,7 @@ class SeearchViewController: UITableViewController,UISearchBarDelegate {
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }
-
+    
     
     
     // MARK: UISearchBarDelegate
